@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机构用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutPublic.css" rel="stylesheet" />
+    <link href="WebUI/css/announcements.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="head">
+        <a href="javascript://"><img src="WebUI/images/logo.png" /></a>
+    </div>
+    <div class="content" id="content">
+        <div class="leftNav" id="leftNav">
+            <ul>
+                <li><a href="InstitutUserC.html">机构主页</a></li>
+                <li><a href="InstitutMessage.html">机构信息</a></li>
+                <li><a href="SiteManage.html">场地管理</a></li>
+                <li><a href="ActivityManage.html">活动管理</a></li>
+                <li><a href="MemberManage.html">成员管理</a></li>
+                <li><a href="VenueRental.html">场地出租</a></li>
+                <li><a href="UserManage.html">用户管理</a></li>
+                <li><a href="NotificatMessage.html">通知消息</a></li>
+                <li><a href="StateMessage.html">统计管理</a></li>
+                <li><a href="AuthorityMessage.html">权限管理</a></li>
+                <li><a href="Announcements.html">公告管理</a></li>
+                <li class="current"><a href="MaterialDesign.html">物料设计</a></li>
+                <li><a href="CulturalResources.html">文化资源</a></li>
+            </ul>
+        </div>
+        <div class="rightCont">
+            <div class="right_head">
+                <p>
+                    <a href="javascript://"><i class="icon iconfont">&#xe604;</i></a>
+                    <b></b>
+                    <a href="javascript://">注销</a>
+                </p>
+                场地管理中心
+            </div>
+            <div id="cnt" class="silde-content">
+                <!-- 右边内容主体块 -->
+                <div class="jg_title">
+                    <a href="javascript://" onclick="add('site_1')" class="click-link">新建需求</a>
+                    <h1>物料设计</h1>
+                    <p>发布物料设计需求，提交订单，由设计师进行联系</p>
+                </div>
+                <div class="announ mater">
+                    <ul>
+                        <li>
+                            <a href="javascript://">米罗制造-梦幻版画体验展</a>
+                            <p>活动中 海报*2 易拉宝*1 拉网画面需要设计</p>
+                            <i class="finished">已完成</i>
+                        </li>
+                        <li>
+                            <a href="javascript://">米罗制造-梦幻版画体验展</a>
+                            <p>活动中 海报*2 易拉宝*1 拉网画面需要设计</p>
+                            <i class="ing">进行中</i>
+                        </li>
+                        <li>
+                            <a href="javascript://">米罗制造-梦幻版画体验展</a>
+                            <p>活动中 海报*2 易拉宝*1 拉网画面需要设计</p>
+                            <i class="beConfirmed">待确认</i>
+                        </li>
+                        <li>
+                            <a href="javascript://">米罗制造-梦幻版画体验展</a>
+                            <p>活动中 海报*2 易拉宝*1 拉网画面需要设计</p>
+                            <i class="revoke">已取消</i>
+                        </li>
+                        <li>
+                            <a href="javascript://">米罗制造-梦幻版画体验展</a>
+                            <p>活动中 海报*2 易拉宝*1 拉网画面需要设计</p>
+                            <i class="finished">已完成</i>
+                        </li>
+                        <li>
+                            <a href="javascript://">米罗制造-梦幻版画体验展</a>
+                            <p>活动中 海报*2 易拉宝*1 拉网画面需要设计</p>
+                            <i class="ing">进行中</i>
+                        </li>
+                        <li>
+                            <a href="javascript://">米罗制造-梦幻版画体验展</a>
+                            <p>活动中 海报*2 易拉宝*1 拉网画面需要设计</p>
+                            <i class="beConfirmed">待确认</i>
+                        </li>
+                        <li>
+                            <a href="javascript://">米罗制造-梦幻版画体验展</a>
+                            <p>活动中 海报*2 易拉宝*1 拉网画面需要设计</p>
+                            <i class="revoke">已取消</i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="add" style="display:none;">
+                <div class="jg_title" style="position:relative;">
+                    <a class="click-link pull-right" href="javascript://" onclick="off()">取消</a>
+                    <h1>创建物料设计需求</h1>
+                    <div class="bm_swtich_all">
+                        <ul class="bm_swtich">
+                            <li class="e">需求提交</li>
+                            <li>需求确认</li>
+                            <li>需求完成</li>
+                        </ul>
+                        <i class="bm_swtich_line"></i>
+                    </div>
+                </div>
+                <div class="layer-body form-horizontal materi">
+                    <div style=" display:none;">
+                        <fieldset class="form-body">
+                            <div class="form-group">
+                                <label class="control-label">需求名称：</label>
+                                <div class="controls OK">
+                                    <input type="text" class="form-control col-md-7" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">需求描述：</label>
+                                <div class="controls">
+                                    <textarea style=" height:120px; padding:4px 6px;font-size:14px;" class="col-md-7">活动简介将介绍给读者，限25个字</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">截止日期：</label>
+                                <div class="controls">
+                                    <input type="text" class="form-control col-md-3" value="选择日期" />
+                                    <i class="fa fa-calendar icon-bold"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">资料上传：</label>
+                                <div class="controls">
+                                    <div class="file_upload">
+                                        <span>拖拽文件或点击选择文件上传</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style=" margin-left:555px;">
+                                <button type="button" class="btn green">提交</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div style="display:none">
+                        <fieldset class="form-body">
+                            <div class="form-group">
+                                <label class="control-label">状态：</label>
+                                <div class="controls">
+                                    <!--待确认是 beConfirmed,已确认hasConfirmed-->
+                                    <p class="xq hasConfirmed">已确认</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">评价：</label> 
+                                <div class="controls">
+                                    <p class="xq star1"></p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">设计师名称：</label>
+                                <div class="controls">
+                                    <p class="xq name">冯婷婷</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">联系方式：</label>
+                                <div class="controls">
+                                    <p class="xq telephone">15400423567</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">QQ：</label>
+                                <div class="controls">
+                                    <p class="xq QQ">56576843</p>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div style="display:block">
+                        <fieldset class="form-body">
+                            <div class="form-group">
+                                <label class="control-label">状态：</label>
+                                <div class="controls">
+                                    <p class="xq hasConfirmed">已完成</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">下载成果：</label>
+                                <div class="controls">
+                                    <span class="xq icon iconfont" style="font-size: 18px; color:#0080f7">&#xe60b;</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">评价：</label>
+                                <div class="controls">
+                                    <p class="xq star1"></p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">设计评论：</label>
+                                <div class="controls">
+                                    <textarea style=" height:120px; padding:4px 6px;font-size:14px;" class="col-md-7">活动简介将介绍给读者，限25个字</textarea>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/plugins/layer/layer.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <script type="text/javascript">
+        var add = function (e) {
+            $("#add").show().find("#save").attr("data-ids", e);
+            $("#cnt").hide()
+            mm();
+        };
+        var off = function () {
+            $("#add").hide()
+            $("#cnt").show()
+        }
+        //物料设计需求处选项卡切换
+        function mm() {
+            $(".bm_swtich_all").each(function () {
+                var ths = $(this);
+                var tli = ths.find("li");
+                var tle = ths.find(".bm_swtich_line");
+                var tli_width = $(".bm_swtich li:first").width();
+                tle.width(tli_width);
+                tli.click(function () {
+                    var tw = $(this).width();
+                    tli.removeClass("e");
+                    $(this).addClass("e");
+                    tle.stop(true, true).animate({
+                        width: tw,
+                        left: $(this).position().left
+                    })
+                })
+            })
+        }
+        $(function () {
+            //侧导航高度自适应
+            onscrolls2();
+        })
+    </script>
+</body>
+</html>

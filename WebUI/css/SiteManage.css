@@ -1,0 +1,71 @@
+﻿.silde-content { padding: 0 0 20px; }
+.silde-content h2 { border-left: 8px solid #636a7c; font-size: 24px; height: 25px; line-height: 25px; margin-bottom: 20px; margin-left: 5px; padding-left: 50px; }
+
+
+.site.thums{margin-left:-10px;margin-right:-10px; padding-left:50px;}
+.site.thums .thum{width:33.3333%;float:left;padding-bottom:20px;}
+.site.thums .thum .ins{display:block;height:120px;overflow:hidden;margin:auto 10px;border:1px solid #bcbcbc;background:#f8f8f8;padding:10px 10px 5px;border-radius:6px;}
+.site.thums .thum{width:33.3333%;float:left;padding-bottom:20px;position:relative;}
+.site.thums .thum h3{font-size:14px;margin-bottom:7px;}
+
+
+.label-dlt{*display:inline;*zoom:1; display:inline-block;padding:3px 0;}
+.label-dlt.label-device{display:block;}
+.label-dlt,.label-dlt .label-body{overflow:hidden;}
+.label-dlt .label-left{color:#aeaeae;}
+.label-device .label-left{padding-top:2px;}
+.label-device .label-body { font-size:0;}
+.label-device .label-body .badge{background:none;border:1px solid #169bd5;color:#169bd5;margin-right:5px;margin-bottom:5px;font-size:11.84px;}
+
+
+.site.thums  .add-thum .ins { background:#f8f8f8 url(../images/icon-add.png) no-repeat center;border-style:dashed;}
+.site.thums  .add-thum .ins:hover { background:#fff url(../images/icon-add.png) no-repeat center;}
+
+
+.add-site h2 { font-size:18px;margin-bottom:20px; line-height:38px;}
+.add-site h3 { padding:7px 0;border-bottom:1px solid #bcbcbc;margin-bottom:15px;font-size:16px;}
+.add-site .control-label{width:120px;}
+.arena { padding-top:20px;}
+/**未读消息*/
+.unread{ position:absolute;right:0px;top:-5px;min-width:20px;height:20px; border-radius:20px; background-color:#d93131;color:#fff; line-height:20px; text-align:center; cursor:pointer;}
+.closes{ position:absolute; right:15px;top:-5px; font-size:25px; display:none;}
+.thum:hover .closes{ display:block}
+
+/*示意图*/
+.SketchMap{ margin:20px auto;overflow:hidden;}
+.MapTop{ height:30px; background-color:#f2f2f2; border:#dcdcdc 1px solid; width:456px; margin:20px auto; text-align:center; line-height:30px;}
+.column{ float:left;width:40px;margin-right:5px;}
+.column input{ border:#bcbcbc 1px solid; height:23px;width:38px;text-indent:5px; margin-bottom:4px; overflow:hidden;display:block;}
+.PlaceMap{ width:813px;height:523px;border-collapse:collapse; position:relative; float:left;} 
+.PlaceMap table{border:#f0f0f0 1px dotted;}
+.PlaceMap tr{ overflow:hidden}
+.PlaceMap td{ border:#f0f0f0 1px dotted;height:27px;overflow:hidden;border-collapse:collapse;}
+.PlaceMap td div{width:27px;height:27px;font-size:24px; text-align:center; color:#d1d1d1;font-weight:bold;}
+.SplitLine{ position:absolute; height:100%;border-left:#fb8888 1px dotted; left:50%; top:0;width:1px;overflow:hidden;}
+
+.bm_swtich_all{ position: absolute; left: 15px; bottom: 0; }
+.bm_swtich { height: 32px; text-indent: 0; }
+.bm_swtich li{ float: left; color: #797979; font-size: 14px; padding: 0 8px; line-height: 24px; margin-right: 8px; cursor: pointer; min-width: 54px; text-align: center; }
+.bm_swtich li.e{ color: #da4f4a; }
+.bm_swtich_line{ min-width: 55px; padding: 0 8px; border-bottom: #da4f4a 4px solid; position: absolute; left: 0; bottom: 0;}
+
+.venueList { background-color:#fff; padding:0 10px;}
+.venueList li{ padding:10px;border-bottom:#eaeaea 1px dotted; overflow:hidden; position:relative;}
+.venueList  li .fields{ margin-top:5px;}
+.venueList  li .fields strong{ margin:0 5px; display:inline-block; font-weight:normal; color:#999; line-height:24px;}
+.venueList  li a{ color:#333; font-size:18px; display:block; line-height:28px;}
+.venueList  li a b{ border:#ff0000 1px solid; padding:2px; color:#ff0000; font-size:12px; margin-left:5px;line-height:15px; display:inline-block;font-weight:normal;}
+.ven_ico{ position:absolute;right:30px;top:22px;}
+.ven_ico i{ font-size:25px;color:#b5b5b5;}
+.RentScreen{ background-color:#fafafa; overflow:hidden;}
+.rentSLeft{ width:560px;border-right:#bcbcbc 1px solid;height:650px; padding-top:20px}
+.rentSLeft h1{ line-height:40px; font-size:30px; text-indent:1rem;}
+.rentSLeft h2{ line-height:40px; font-size:22px; text-indent:1rem;}
+.rentSRight{ width:370px;}
+.calendar{ position:relative;}
+#calendar div.rili_switch{ position:absolute;right:3px;top:12px;width:120px;}
+#calendar th{ width:368px;}
+.changci h1{ text-align:center; font-size:32px; color:#d7d7d7; line-height:50px; margin-bottom:20px;}
+.shiduan{ position:relative;}
+.shiduan em{ position:absolute; left:5px;top:5px; line-height:20px; font-size:14px; font-style:normal; color:#bcbcbc}
+.shiduan input{text-indent:35px; font-size:14px;color:#2e2e2e}

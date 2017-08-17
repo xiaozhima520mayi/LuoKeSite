@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机构用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutPublic.css" rel="stylesheet" />
+    <!--文本编辑器-->
+    <link href="WebUI/plugins/editor/css/summernote.css" rel="stylesheet" />
+    <link href="WebUI/plugins/editor/css/summernote-bs3.css" rel="stylesheet" />
+    <link href="WebUI/plugins/editor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="WebUI/css/announcements.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="head">
+        <a href="javascript://"><img src="WebUI/images/logo.png" /></a>
+    </div>
+    <div class="content" id="content">
+        <div class="leftNav" id="leftNav">
+            <ul>
+                <li><a href="InstitutUserC.html">机构主页</a></li>
+                <li><a href="InstitutMessage.html">机构信息</a></li>
+                <li><a href="SiteManage.html">场地管理</a></li>
+                <li><a href="ActivityManage.html">活动管理</a></li>
+                <li><a href="MemberManage.html">成员管理</a></li>
+                <li><a href="VenueRental.html">场地出租</a></li>
+                <li><a href="UserManage.html">用户管理</a></li>
+                <li><a href="NotificatMessage.html">通知消息</a></li>
+                <li><a href="StateMessage.html">统计管理</a></li>
+                <li><a href="AuthorityMessage.html">权限管理</a></li>
+                <li class="current"><a href="Announcements.html">公告管理</a></li>
+                <li><a href="MaterialDesign.html">物料设计</a></li>
+                <li><a href="CulturalResources.html">文化资源</a></li>
+            </ul>
+        </div>
+        <div class="rightCont">
+            <div class="right_head">
+                <p>
+                    <a href="javascript://"><i class="icon iconfont">&#xe604;</i></a>
+                    <b></b>
+                    <a href="javascript://">注销</a>
+                </p>
+                场地管理中心
+            </div>
+            <div id="cnt" class="silde-content">
+                <!-- 右边内容主体块 -->
+                <div class="jg_title">
+                    <a href="javascript://" onclick="add('site_1')" class="click-link">新建公告</a>
+                    <h1>公告管理</h1>
+                    <p>管理，发布机构公告</p>
+                </div>
+                <div class="announ">
+                    <ul>
+                        <li>
+                            <a href="javascript://">刘威呼吁艺术家回归话剧舞台：这是一片净土</a>
+                            <p>2016-01-11 至 2016-02-01</p>
+                        </li>
+                        <li>
+                            <a href="javascript://">刘威呼吁艺术家回归话剧舞台：这是一片净土</a>
+                            <p>2016-01-11 至 2016-02-01</p>
+                        </li>
+                        <li>
+                            <a href="javascript://">刘威呼吁艺术家回归话剧舞台：这是一片净土</a>
+                            <p>2016-01-11 至 2016-02-01</p>
+                        </li>
+                        <li>
+                            <a href="javascript://">刘威呼吁艺术家回归话剧舞台：这是一片净土</a>
+                            <p>2016-01-11 至 2016-02-01</p>
+                        </li>
+                        <li>
+                            <a href="javascript://">刘威呼吁艺术家回归话剧舞台：这是一片净土</a>
+                            <p>2016-01-11 至 2016-02-01</p>
+                        </li>
+                        <li>
+                            <a href="javascript://">刘威呼吁艺术家回归话剧舞台：这是一片净土</a>
+                            <p>2016-01-11 至 2016-02-01</p>
+                        </li>
+                        <li>
+                            <a href="javascript://">刘威呼吁艺术家回归话剧舞台：这是一片净土</a>
+                            <p>2016-01-11 至 2016-02-01</p>
+                        </li>
+                        <li>
+                            <a href="javascript://">刘威呼吁艺术家回归话剧舞台：这是一片净土</a>
+                            <p>2016-01-11 至 2016-02-01</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="add" style="display:none;">
+                <div class="jg_title">
+                    <a class="click-link pull-right" href="javascript://" onclick="off()">取消</a>
+                    <h1>创建公告</h1>
+                    <p>填写公告的标题、内容、有效时间</p>
+                </div>
+                <div class="layer-body form-horizontal">
+                    <fieldset class="form-body">
+                        <div class="form-group">
+                            <label class="control-label">公告标题：</label>
+                            <div class="controls">
+                                <input type="text" class="form-control col-md-8" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">有效时段：</label>
+                            <div class="controls">
+                                <div class="time">
+                                    <p>开始</p>
+                                    <input type="text" class="form-control col-md-3" style=" padding-left:35px; color:#808080" value="选择日期" />
+                                </div>
+                                <div class="time">
+                                    <p>结束</p>
+                                    <input type="text" class="form-control col-md-3" style=" padding-left: 35px; color: #808080" value="选择日期"    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">公告内容：</label>
+                            <div class="controls" style=" border:#d3d0d0 1px solid;">
+                                <div class="ibox-content no-padding">
+                                    <div class="summernote">
+                                        <h3>公告内容区域</h3>
+                                        以色列经典话剧亮相北京 8个葬礼诠释“生与死” <strong>国家大剧院将上演黄梅戏《牛郎织女》《女驸马》</strong> 江珊出演两部古希腊悲剧：我接到了最难演的角色
+                                        <br />
+                                        <br />
+                                        <ul>
+                                            <li>新京报：戏曲推广，不可只靠白先勇</li>
+                                            <li>新京报：戏曲推广，不可只靠白先勇</li>
+                                            <li>新京报：戏曲推广，不可只靠白先勇</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-right">
+                            <button type="button" id="save" class="btn green" onclick="onsave(this)" data-ids="">保存</button>
+                            <button type="button" id="keep" class="btn">取消</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/plugins/layer/layer.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <!-- 文本编辑器 -->
+    <script src="WebUI/js/bootstrap.min.js"></script>
+    <script src="WebUI/plugins/editor/js/summernote.min.js"></script>
+    <script type="text/javascript">
+        var add = function (e) {
+            $("#add").show().find("#save").attr("data-ids", e);
+            $("#cnt").hide()
+        };
+        var off = function () {
+            $("#add").hide()
+            $("#cnt").show()
+        }
+        var keep = $("#keep");
+        var save = $("#save");
+        var edit = $("#edit");
+        var onsave = function (s) {
+            var id = $(s).attr("data-ids");//获取指定场馆的id值
+            //提交保存数据的逻辑
+            console.log(id);
+
+            keep.show();
+            save.hide();
+            edit.hide();
+            off();
+        }
+        $(function () {
+            //侧导航高度自适应
+            onscrolls2();
+        })
+        $(document).ready(function () {
+
+            $('.summernote').summernote();
+
+        });
+        var edit = function () {
+            $('.click2edit').summernote({ focus: true });
+        };
+        var save = function () {
+            var aHTML = $('.click2edit').code(); //save HTML If you need(aHTML: array).
+            $('.click2edit').destroy();
+        };
+
+    </script>
+</body>
+</html>

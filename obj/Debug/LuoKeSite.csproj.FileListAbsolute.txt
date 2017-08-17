@@ -1,0 +1,6 @@
+C:\工作项目\上业电子资源平台PSD\ResourceSiteDev\ShangYe.Resources.Dev\WebSite\LuoKeSite\bin\LuoKeSite.dll.config
+C:\工作项目\上业电子资源平台PSD\ResourceSiteDev\ShangYe.Resources.Dev\WebSite\LuoKeSite\bin\LuoKeSite.dll
+C:\工作项目\上业电子资源平台PSD\ResourceSiteDev\ShangYe.Resources.Dev\WebSite\LuoKeSite\bin\LuoKeSite.pdb
+C:\工作项目\上业电子资源平台PSD\ResourceSiteDev\ShangYe.Resources.Dev\WebSite\LuoKeSite\obj\Debug\LuoKeSite.csprojResolveAssemblyReference.cache
+C:\工作项目\上业电子资源平台PSD\ResourceSiteDev\ShangYe.Resources.Dev\WebSite\LuoKeSite\obj\Debug\LuoKeSite.dll
+C:\工作项目\上业电子资源平台PSD\ResourceSiteDev\ShangYe.Resources.Dev\WebSite\LuoKeSite\obj\Debug\LuoKeSite.pdb

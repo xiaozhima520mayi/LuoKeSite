@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7CEDF32-0D05-4BE2-BEFF-3590071F356B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LuoKeSite</RootNamespace>
+    <AssemblyName>LuoKeSite</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActivityDetail.html" />
+    <Content Include="ActivityManage.html" />
+    <Content Include="MaterialDesign.html" />
+    <Content Include="Announcements.html" />
+    <Content Include="AuthorityMessage.html" />
+    <Content Include="InstitutMessage.html" />
+    <Content Include="CulturalResources.html" />
+    <Content Include="InstitutUserC.html" />
+    <Content Include="PersonalSettings.aspx" />
+    <Content Include="PersonalSettings.html" />
+    <Content Include="StateMessage.html" />
+    <Content Include="NotificatMessage.html" />
+    <Content Include="MemberManage.html" />
+    <Content Include="SiteManage.html" />
+    <Content Include="UserCenter.html" />
+    <Content Include="UserManage.html" />
+    <Content Include="VenueRental.html" />
+    <Content Include="Web.config" />
+    <Content Include="WebUI\css\ActivityManage.css" />
+    <Content Include="WebUI\css\announcements.css" />
+    <Content Include="WebUI\css\authorityMessage.css" />
+    <Content Include="WebUI\css\base.css" />
+    <Content Include="WebUI\css\bootstarp.units.css" />
+    <Content Include="WebUI\css\cultural.css" />
+    <Content Include="WebUI\css\InstitutMessage.css" />
+    <Content Include="WebUI\css\InstitutPublic.css" />
+    <Content Include="WebUI\css\InstitutUserC.css" />
+    <Content Include="WebUI\css\nemberManage.css" />
+    <Content Include="WebUI\css\notificat.css" />
+    <Content Include="WebUI\css\PersonalSettings.css" />
+    <Content Include="WebUI\css\SiteManage.css" />
+    <Content Include="WebUI\css\UserCenter.css" />
+    <Content Include="WebUI\font\iconfont.css" />
+    <Content Include="WebUI\font\iconfont.svg" />
+    <Content Include="WebUI\images\act-img01.png" />
+    <Content Include="WebUI\images\act-img02.png" />
+    <Content Include="WebUI\images\act-img03.png" />
+    <Content Include="WebUI\images\act-img04.png" />
+    <Content Include="WebUI\images\bm1.jpg" />
+    <Content Include="WebUI\images\bm2.jpg" />
+    <Content Include="WebUI\images\bmimg.jpg" />
+    <Content Include="WebUI\images\bus-img.png" />
+    <Content Include="WebUI\images\face-selt.png" />
+    <Content Include="WebUI\images\icon-add.png" />
+    <Content Include="WebUI\images\img_300.png" />
+    <Content Include="WebUI\images\img_400.png" />
+    <Content Include="WebUI\images\jgimg.jpg" />
+    <Content Include="WebUI\images\like1.jpg" />
+    <Content Include="WebUI\images\like2.jpg" />
+    <Content Include="WebUI\images\like3.jpg" />
+    <Content Include="WebUI\images\like4.jpg" />
+    <Content Include="WebUI\images\like5.jpg" />
+    <Content Include="WebUI\images\logo-img.png" />
+    <Content Include="WebUI\images\logo.png" />
+    <Content Include="WebUI\images\luoke.png" />
+    <Content Include="WebUI\images\map-img.png" />
+    <Content Include="WebUI\images\QRcord.jpg" />
+    <Content Include="WebUI\images\selt.png" />
+    <Content Include="WebUI\images\star.png" />
+    <Content Include="WebUI\images\tab.gif" />
+    <Content Include="WebUI\images\u41.png" />
+    <Content Include="WebUI\images\u4953.jpg" />
+    <Content Include="WebUI\images\u4954.jpg" />
+    <Content Include="WebUI\images\u4955.jpg" />
+    <Content Include="WebUI\images\upload\act-img01.png" />
+    <Content Include="WebUI\images\upload\act-img02.png" />
+    <Content Include="WebUI\images\upload\act-img03.png" />
+    <Content Include="WebUI\images\upload\act-img04.png" />
+    <Content Include="WebUI\images\user.gif" />
+    <Content Include="WebUI\images\user1.png" />
+    <Content Include="WebUI\images\user2.jpg" />
+    <Content Include="WebUI\images\yinying.png" />
+    <Content Include="WebUI\js\animate.js" />
+    <Content Include="WebUI\js\bootstrap.min.js" />
+    <Content Include="WebUI\js\jquery-1.9.1.min.js" />
+    <Content Include="WebUI\js\personalSettings.js" />
+    <Content Include="WebUI\plugins\rili\rili.js" />
+    <Content Include="WebUI\plugins\rili\rili.css" />
+    <Content Include="WebUI\plugins\editor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="WebUI\plugins\editor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="WebUI\plugins\editor\js\summernote.min.js" />
+    <Content Include="WebUI\plugins\editor\css\summernote-bs3.css" />
+    <Content Include="WebUI\plugins\editor\css\summernote.css" />
+    <Content Include="WebUI\plugins\layer\extend\layer.ext.js" />
+    <Content Include="WebUI\plugins\layer\layer.js" />
+    <Content Include="WebUI\plugins\layer\skin\default\icon-ext.png" />
+    <Content Include="WebUI\plugins\layer\skin\default\icon.png" />
+    <Content Include="WebUI\plugins\layer\skin\default\loading-0.gif" />
+    <Content Include="WebUI\plugins\layer\skin\default\loading-1.gif" />
+    <Content Include="WebUI\plugins\layer\skin\default\loading-2.gif" />
+    <Content Include="WebUI\plugins\layer\skin\layer.css" />
+    <Content Include="WebUI\plugins\layer\skin\layer.ext.css" />
+    <Content Include="WebUI\plugins\mCustomScrollbar\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="WebUI\plugins\mCustomScrollbar\jquery.mCustomScrollbar.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PersonalSettings.aspx.cs">
+      <DependentUpon>PersonalSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonalSettings.aspx.designer.cs">
+      <DependentUpon>PersonalSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WebUI\font\iconfont.eot" />
+    <Content Include="WebUI\font\iconfont.ttf" />
+    <Content Include="WebUI\font\iconfont.woff" />
+    <Content Include="WebUI\plugins\editor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="WebUI\plugins\editor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="WebUI\plugins\editor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="WebUI\plugins\editor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="WebUI\plugins\editor\font-awesome\fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebUI\plugins\editor\images\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19471</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:19471/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

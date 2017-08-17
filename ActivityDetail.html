@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机构用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <!--机构用户中心公用样式-->
+    <link href="WebUI/css/InstitutPublic.css" rel="stylesheet" />
+    <link href="WebUI/css/ActivityManage.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="head">
+        <a href="javascript://"><img src="WebUI/images/logo.png" /></a>
+    </div>
+    <div class="content" id="content">
+        <div class="leftNav" id="leftNav">
+            <ul>
+                <li><a href="InstitutUserC.html">机构主页</a></li>
+                <li class="current"><a href="InstitutMessage.html">机构信息</a></li>
+                <li><a href="SiteManage.html">场地管理</a></li>
+                <li><a href="ActivityManage.html">活动管理</a></li>
+                <li><a href="MemberManage.html">成员管理</a></li>
+                <li><a href="VenueRental.html">场地出租</a></li>
+                <li><a href="UserManage.html">用户管理</a></li>
+                <li><a href="NotificatMessage.html">通知消息</a></li>
+                <li><a href="StateMessage.html">统计管理</a></li>
+                <li><a href="AuthorityMessage.html">权限管理</a></li>
+                <li><a href="Announcements.html">公告管理</a></li>
+                <li><a href="MaterialDesign.html">物料设计</a></li>
+                <li><a href="CulturalResources.html">文化资源</a></li>
+            </ul>
+        </div>
+        <div class="rightCont">
+            <div class="right_head">
+                <p>
+                    <a href="javascript://"><i class="icon iconfont">&#xe604;</i></a>
+                    <b></b>
+                    <a href="javascript://">注销</a>
+                </p>
+                活动管理
+            </div>
+            <div id="cnt" class="silde-content">
+                <!-- 右边内容主体块 -->
+                <div class="jg_title">
+                    <a href="javascript://" onclick="add()" class="click-link">修改/保存</a>
+                    <h1>米罗制造-梦幻版画体验展</h1>
+                    <ul id="act" class="tab nav-tabs tab-act">
+                        <li class="active"><a href="#actInfo" data-toggle="tab">活动信息</a></li>
+                        <li><a href="#gamesManage" data-toggle="tab">场次管理</a></li>
+                        <li><a href="#regManage" data-toggle="tab">报名管理</a></li>
+                        <li><a href="#commentManage" data-toggle="tab">评论管理</a></li>
+                    </ul>
+                </div>
+                <div class="mod-act cont tab-content">
+                    <div class="col-arena tab-pane form-horizontal active" id="wellAct">
+                        <h2>基本信息</h2>
+                        <div id="site_1" class="medias site clearfix">
+                            <fieldset class="form-body">
+                                <div class="form-group">
+                                    <label class="control-label">活动类型：</label>
+                                    <div class="controls form-control-static">
+                                        <label class="radio-inline"> <input type="radio" value="option1" id="inlineRadio1">一百年活动</label>
+                                        <hr class="hr-br" />
+                                        <label class="radio-inline"> <input type="radio" value="option1" id="inlineRadio1">筹备活动</label>
+                                        <input type="text" class="form-control col-md-1 no-space" placeholder="比例" />
+                                        <span class="help-block">%</span>
+                                        <span class="help-block text-gray">报名人数 > 活动最大人数 * 筹办比例 = 筹办成功</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">所属类型：</label>
+                                    <div class="controls">
+                                        <select class="form-control col-md-2">
+                                            <option>亲子活动</option>
+                                            <option>公益活动</option>
+                                            <option>展览展会</option>
+                                            <option>名家讲坛</option>
+                                            <option>技术研讨</option>
+                                            <option>全民科普</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">活动名称：</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control col-md-3" placeholder="请输入" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">关键词：</label>
+                                    <div class="controls clearfix">
+                                        <input type="text" class="form-control col-md-2" placeholder="请输入" />
+                                        <input type="text" class="form-control col-md-2" placeholder="请输入" />
+                                        <input type="text" class="form-control col-md-2" placeholder="请输入" />
+                                        <span class="help-block text-gray">最少输入一个关键词</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">场地类型：</label>
+                                    <div class="controls form-control-static">
+                                        <label class="radio-inline"> <input type="radio" value="option1" />免费</label>
+                                        <hr class="hr-br" />
+                                        <label class="radio-inline"> <input type="radio" value="option1" />现场付费</label>
+                                        <input type="text" class="form-control col-md-2 no-space" placeholder="￥" />
+                                        <hr class="hr-br" />
+                                        <label class="radio-inline"> <input type="radio" value="option1" />平台积分</label>
+                                        <input type="text" class="form-control col-md-2 no-space" placeholder="" />
+                                        <label class="checkbox-inline"> <input type="checkbox" value="option1" />签到返还</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">活动简介：</label>
+                                    <div class="controls">
+                                        <textarea class="form-control col-md-4" style="height:60px;" placeholder="活动简介将展示给读者，限25个字"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">横板海报：</label>
+                                    <div class="controls">
+                                        <img id="horizImg" src="WebUI/images/img_400.png" style="margin-bottom:10px;" width="200" height="150" />
+                                        <br />
+                                        <span class="btn fileinput-button">
+                                            <span>选择文件</span>
+                                            <input type="file" name="files[]" multiple="" id="logoId" onchange="fileView(this, 'horizImg')">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">竖版海报：</label>
+                                    <div class="controls">
+                                        <img id="verticalImg" src="WebUI/images/img_300.png" style="margin-bottom:10px;" width="150" height="200" />
+                                        <br />
+                                        <span class="btn fileinput-button">
+                                            <span>选择文件</span>
+                                            <input type="file" name="files[]" multiple="" id="logoId" onchange="fileView(this, 'verticalImg')">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">活动详情：</label>
+                                    <div class="controls">
+                                        <textarea class="form-control col-md-8" style="height:260px;" placeholder=""></textarea>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div id="edit" class="edit-site" style="display:none;">
+                                    <h3><i class="icon">2</i>场地地图</h3>
+                                </div>
+                                <div class="form-group text-right">
+                                    <button type="button" id="keep" class="btn green" onclick="onkeep()">继续</button>
+                                    <button type="button" id="save" class="btn green" onclick="onsave(this)" data-ids="" style="display:none;">保存</button>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="col-arena tab-pane" id="oldAct">
+                        <h2>2月</h2>
+                        
+                    </div>
+                </div>
+                <!-- 新建场馆块 -->
+            </div>
+        </div>
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <script type="text/javascript">
+        var add = function (e) {
+            $("#add").show().find("#save").attr("data-ids", e);
+            $("#cnt").hide()
+        };
+        var off = function () {
+            $("#add").hide()
+            $("#cnt").show()
+        }
+        
+        var keep = $("#keep");
+        var save = $("#save");
+        var edit = $("#edit");
+        var onkeep = function () {
+            keep.hide();
+            save.show();
+            edit.show();
+        };
+        var onsave = function (s) {
+            var id = $(s).attr("data-ids");//获取指定场馆的id值
+            //提交保存数据的逻辑
+            console.log(id);
+
+            keep.show();
+            save.hide();
+            edit.hide();
+            off();
+        }
+        $(function () {
+            //$('#act a').tab('show');
+        })
+        $(function () {
+            //侧导航高度自适应
+            onscrolls2();
+        })
+    </script>
+</body>
+</html>

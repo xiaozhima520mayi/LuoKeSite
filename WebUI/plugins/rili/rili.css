@@ -1,0 +1,29 @@
+﻿/*日历*/
+.calendar{border:1px solid #eee;z-index:999; position:relative; background-color:#fff;}
+#calendar thead{color:#fff;}
+#calendar td,#calendar th{text-align:center;vertical-align:middle;color:#3C3C3C;height:32px;width:40px;}
+#calendar th{width:330px;}
+#calendar div{width:30px;margin:0 auto;line-height:30px;border-radius:30px;color:#ccc;font-size:14px;}
+#calendar .c_today{color:#333;font-weight:bold;}
+#calendar .has{background:#f0f0f0;color:#333;cursor: pointer;}
+#calendar .current{background:#000;color:#fff;}
+.prev,.next,.day{width:25px;height:25px;border:#d7d7d7 1px solid; border-radius:3px; text-align:center; line-height:23px; background-color:#fff; float:left; cursor:pointer}
+.day{ width:50px; margin:0 1px;}
+.prev i,.next i{ color:#999;display:inline-block;}
+#calendar #calendar_title{cursor:pointer;text-align:center;width:100%;}
+.rili_switch{ float:right;}
+
+.dashiji{display:none; border:1px solid #e9e9e9;position:absolute;width:236px;height:264px;overflow:hidden; padding:0 20px; left:-276px; top:-1px; z-index:9999; background-color:#fff;}
+.dashiji_time{line-height:53px;font-size:18px;color:#222;padding-left:10px;}
+.dashiji_page{position:absolute;right:10px;color:#aaa;font-size:14px;width:65px;text-align:center;top:18px;}
+.dashiji_page span{float:left;width:12px;height:13px;margin-top:1px;cursor:pointer;overflow:hidden;background:#ddd;}
+.dashiji_page .d_l{background-position:0 -80px;}
+.dashiji_page .d_r{float:right;background-position:0 -94px;}
+.dashiji_page .d_l2{background-position:0 -108px;}
+.dashiji_page .d_r2{float:right;background-position:0 -122px;}
+.dashiji_page i{color:#38a2db;}
+.dashiji_box{ overflow:hidden; }
+.dashiji_box b{display:block;padding:5px 10px 5px;font-size:16px;}
+.dashiji_box p{padding:0 10px;font-size:14px;color:#555;line-height:20px;}
+.dashiji_box p a{color:#39c;}
+.dsjImg{margin:8px;width:126px; height:88.6px; border:#eee 1px solid; overflow:hidden; display:block;}

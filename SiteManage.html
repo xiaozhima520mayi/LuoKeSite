@@ -1,0 +1,915 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机构用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutPublic.css" rel="stylesheet" />
+    <link href="WebUI/css/SiteManage.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="head">
+        <a href="javascript://"><img src="WebUI/images/logo.png" /></a>
+    </div>
+    <div class="content" id="content">
+        <div class="leftNav" id="leftNav">
+            <ul>
+                <li><a href="InstitutUserC.html">机构主页</a></li>
+                <li><a href="InstitutMessage.html">机构信息</a></li>
+                <li class="current"><a href="SiteManage.html">场地管理</a></li>
+                <li><a href="ActivityManage.html">活动管理</a></li>
+                <li><a href="MemberManage.html">成员管理</a></li>
+                <li><a href="VenueRental.html">场地出租</a></li>
+                <li><a href="UserManage.html">用户管理</a></li>
+                <li><a href="NotificatMessage.html">通知消息</a></li>
+                <li><a href="StateMessage.html">统计管理</a></li>
+                <li><a href="AuthorityMessage.html">权限管理</a></li>
+                <li><a href="Announcements.html">公告管理</a></li>
+                <li><a href="MaterialDesign.html">物料设计</a></li>
+                <li><a href="CulturalResources.html">文化资源</a></li>
+            </ul>
+        </div>
+        <div class="rightCont">
+            <div class="right_head">
+                <p>
+                    <a href="javascript://"><i class="icon iconfont">&#xe604;</i></a>
+                    <b></b>
+                    <a href="javascript://">注销</a>
+                </p>
+                场地管理中心
+            </div>
+
+            <div id="cnt" class="silde-content">
+                <!-- 右边内容主体块 -->
+                <div class="jg_title">
+                    <a href="javascript://" onclick="addarena()" class="click-link">新建场地</a>
+                    <h1>场地管理</h1>
+                    <p>创建，管理机构内场地信息</p>
+                </div>
+                <div class="arena cont">
+                    <div class="col-arena">
+                        <h2>绍兴图书馆镜湖新馆<small>绍兴市越城区镜湖新区洋江西路</small><a class="click-link" href="javascript:;">修改</a></h2>
+                        <div id="site_1" class="thums site clearfix">
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum add-thum">
+                                <a class="ins" href="javascript:;" onclick="add('site_1')"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-arena">
+                        <h2>绍兴图书馆<small>绍兴市延安路</small><a class="click-link" href="javascript:;">修改</a></h2>
+                        <div id="site_2" class="thums site clearfix">
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thum add-thum">
+                                <a class="ins" href="javascript:;" onclick="add('site_1')"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 新建场馆块 -->
+            </div>
+            <div id="add" style="display:none;">
+                <div class="jg_title">
+                    <a class="click-link pull-right" href="javascript://" onclick="off()">取消</a>
+                    <h1>新建场地</h1>
+                    <p>设置场地基本信息，示意图</p>
+                </div>
+                <div class="layer-body adds form-horizontal">
+                    <button type="button"  class="btn fright">编辑</button>
+                    <h3><i class="icon">1</i>基本信息</h3>
+                    <fieldset class="form-body">
+                        <div class="form-group">
+                            <label class="control-label">场地名称：</label>
+                            <div class="controls">
+                                <input type="text" class="form-control col-md-3" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">场地面积：</label>
+                            <div class="controls">
+                                <input type="text" class="form-control col-md-1" />
+                                <span class="help-block">㎡</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">所在楼层：</label>
+                            <div class="controls">
+                                <input type="text" class="form-control col-md-1" />
+                                <span class="help-block">F</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">包含设备：</label>
+                            <div class="controls form-control-static">
+                                <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">麦克风</label>
+                                <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">空调</label>
+                                <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">音响</label>
+                                <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">讲台</label>
+                                <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">投影</label>
+                                <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">灯光</label>
+                                <a class="click-link" href="javascript:;">添加</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">场地类型：</label>
+                            <div class="controls form-control-static">
+                                <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">报告厅/放映厅</label>
+                                <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">一人一座</label>
+                                <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">活动空间</label>
+                            </div>
+                        </div>
+                        <hr />
+                        <div id="edit" class="edit-site" style="display:none;">
+                            <h3><i class="icon">2</i>场地地图</h3>
+                        </div>
+                        <div class="form-group text-right">
+                            <button type="button" id="keep" class="btn green" onclick="onkeep()">继续</button>
+                            <button type="button" id="save" class="btn green" onclick="onsave(this)" data-ids="" style="display:none;">保存</button>
+                        </div>
+                    </fieldset>
+                    <h3><i class="icon">2</i>场地图示</h3>
+                    <div class="SketchMap">
+                        <h6 class="MapTop">荧幕/主席台方向</h6>
+                        <div class="column">
+                            <input type="text" placeholder="1" />
+                            <input type="text" placeholder="2" />
+                            <input type="text" placeholder="3" />
+                            <input type="text" placeholder="4" />
+                            <input type="text" placeholder="5" />
+                            <input type="text" placeholder="6" />
+                            <input type="text" placeholder="7" />
+                            <input type="text" placeholder="8" />
+                            <input type="text" placeholder="9" />
+                            <input type="text" placeholder="10" />
+                            <input type="text" placeholder="11" />
+                            <input type="text" placeholder="12" />
+                            <input type="text" placeholder="13" />
+                            <input type="text" placeholder="14" />
+                        </div>
+                        <div class="PlaceMap">
+                            <table cellpadding="0" cellspacing="0" border="1">
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                    <td><div class="icon iconfont">&#xe609;</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                    <td><div class="icon iconfont"></div></td>
+                                </tr>
+                            </table>
+                            <p class="SplitLine"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新建场地块 -->
+    <div id="addArena" style="display:none;">
+        
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/plugins/layer/layer.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <script type="text/javascript">
+        var add = function (e) {
+            $("#add").show().find("#save").attr("data-ids", e);
+            $("#cnt").hide()
+        };
+        var off = function () {
+            $("#add").hide()
+            $("#cnt").show()
+        }
+        var addarena = function (e) {
+            layer.open({
+                type: 2,
+                shadeClose: true,
+                shade: 0.8,
+                title: false,
+                area: ['700px', '480px'],
+                content: 'addSite.html'
+            })
+        };
+        var keep = $("#keep");
+        var save = $("#save");
+        var edit = $("#edit");
+        var onkeep = function () {
+            keep.hide();
+            save.show();
+            edit.show();
+        };
+        var onsave = function (s) {
+            var id = $(s).attr("data-ids");//获取指定场馆的id值
+            //提交保存数据的逻辑
+            console.log(id);
+
+            keep.show();
+            save.hide();
+            edit.hide();
+            off();
+        }
+        $(function () {
+            //侧导航高度自适应
+            onscrolls2();
+        })
+    </script>
+    <script type="text/javascript">
+        //初始化地址下拉框
+        //addressInit('province', 'city', 'area');
+    </script>
+    
+
+</body>
+</html>

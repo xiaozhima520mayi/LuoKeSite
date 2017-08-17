@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机构用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <!--机构用户中心公用样式-->
+    <link href="WebUI/css/InstitutPublic.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutMessage.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="head">
+        <a href="javascript://"><img src="WebUI/images/logo.png" /></a>
+    </div>
+    <div class="content" id="content">
+        <div class="leftNav" id="leftNav">
+            <ul>
+                <li><a href="InstitutUserC.html">机构主页</a></li>
+                <li class="current"><a href="InstitutMessage.html">机构信息</a></li>
+                <li><a href="SiteManage.html">场地管理</a></li>
+                <li><a href="ActivityManage.html">活动管理</a></li>
+                <li><a href="MemberManage.html">成员管理</a></li>
+                <li><a href="VenueRental.html">场地出租</a></li>
+                <li><a href="UserManage.html">用户管理</a></li>
+                <li><a href="NotificatMessage.html">通知消息</a></li>
+                <li><a href="StateMessage.html">统计管理</a></li>
+                <li><a href="AuthorityMessage.html">权限管理</a></li>
+                <li><a href="Announcements.html">公告管理</a></li>
+                <li><a href="MaterialDesign.html">物料设计</a></li>
+                <li><a href="CulturalResources.html">文化资源</a></li>
+            </ul>
+        </div>
+        <div class="rightCont">
+            <div class="right_head">
+                <p>
+                    <a href="javascript://"><i class="icon iconfont">&#xe604;</i></a>
+                    <b></b>
+                    <a href="javascript://">注销</a>
+                </p>
+                机构用户中心
+            </div>
+            <div class="jg_title">
+                <a href="javascript://">修改</a>
+                <h1>机构信息</h1>
+                <p>机构基本信息明细</p>
+            </div>
+            <div class="cont silde-content">
+                <form class="form-horizontal">
+                    <h2>基本信息</h2>
+                    <fieldset class="form-body">
+                        <div class="form-group">
+                            <label class="control-label">机构官方ID：</label>
+                            <div class="controls">
+                                <p class="form-control-static">小芝麻</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">机构类型：</label>
+                            <div class="controls">
+                                <select class="form-control col-md-2">
+                                    <option>请选择机构类型</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">检索机构：</label>
+                            <div class="controls clearfix">
+                                <input type="text" class="form-control col-md-2" />
+                                <input type="text" class="form-control col-md-2" />
+                                <input type="text" class="form-control col-md-2" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">机构名称：</label>
+                            <div class="controls clearfix">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">机构名称：</label>
+                            <div class="controls clearfix">
+                                <textarea class="form-control col-md-4" style="height:120px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">机构官网：</label>
+                            <div class="controls clearfix">
+                                <input type="text" class="form-control col-md-4" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">机构专属域名：</label>
+                            <div class="controls clearfix">
+                                <p class="form-control-static col-md-2">http://www.shangye.com</p>
+                                <input type="text" class="form-control col-md-2" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">方形LOGO：</label>
+                            <div class="controls clearfix">
+                                <img id="logo" src="WebUI/images/logo-img.png" style="margin-bottom:10px;" width="132" height="132" />
+                                <br />
+                                <span class="btn fileinput-button">
+                                    <span>选择文件</span>
+                                    <input type="file" name="files[]" multiple="" id="logoId" onchange="fileView(this, 'logo')">
+                                </span>
+                                <button class="btn" type="button">点击上传</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">营业执照：</label>
+                            <div class="controls media buslic clearfix">
+                                <div class="media-left pull-left">
+                                    <img id="businessLicense" style="margin-bottom:10px;" src="WebUI/images/bus-img.png" width="176" height="122" />
+                                    <br />
+                                    <span class="btn fileinput-button">
+                                        <span>选择文件</span>
+                                        <input type="file" name="files[]" multiple="" id="buslicId" onchange="fileView(this, 'businessLicense')">
+                                    </span>
+                                    <button class="btn" type="button">点击上传</button>
+                                </div>
+                                <div class="media-body">
+                                    <ol>
+                                        <li>1,提供含一年年检的营业执照</li>
+                                        <li>2.上传文件需加盖章，清晰无涂抹</li>
+                                        <li>3.格式为JPG/JEPG/GIF/PNG，大小不要超过为3M</li>
+                                        <li><b>注：你的信息不会被其他网友看到，我们会严格保密你的信息</b></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <hr />
+                    <h2>联系方式</h2>
+                    <fieldset class="form-body">
+                        <div class="form-group">
+                            <label class="control-label">机构电话：</label>
+                            <div class="controls">
+                                <input type="text" class="form-control col-md-3" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">机构邮箱：</label>
+                            <div class="controls">
+                                <input type="text" class="form-control col-md-3" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">在线咨询QQ：</label>
+                            <div class="controls clearfix">
+                                <input type="text" class="form-control col-md-3" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">机构地址：</label>
+                            <div class="controls clearfix">
+                                <select class="form-control col-md-2">
+                                    <option>省</option>
+                                </select>
+                                <select class="form-control col-md-2">
+                                    <option>市</option>
+                                </select>
+                                <select class="form-control col-md-2">
+                                    <option>区</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"></label>
+                            <div class="controls clearfix">
+                                <img src="WebUI/images/map-img.png" width="380" height="284" />
+                            </div>
+                        </div>
+                    </fieldset>
+                    <hr />
+                    <h2>联系方式</h2>
+                    <fieldset class="form-body xieyi">
+                        <div class="form-group">
+                            <label class="control-label">协议内容：</label>
+                            <div class="controls">
+                                <input type="button" class="btn" value="下载查看" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"></label>
+                            <div class="controls">
+                                <p class="detail form-control col-md-7">
+                                    本协议系由百度与所有通过百度文库平台发布作品的主体（以下简称“机构”）就资源的引入、使用及相关服务所订立的有效合约，所有机构必须同意并遵守本协议。通过机构注册程序阅读本协议并点击"同意"按钮或以任何方式参与数字作品提交均被视为机构完全接受本协议。<br />
+                                    <br />
+                                    一、总则<br />
+                                    1.1本协议内容包括确认函、协议正文、数字作品清单及所有百度及百度文库已经发布的或将来可能发布的各类规则。所有规则为本协议不可分割的组成部分，与协议正文具有同等法律效力。<br />
+                                    1.2 双方承诺接受并遵守本协议的约定。本协议一经公布立即生效，百度有权随时对协议内容进行修订，修订后的协议将公布于百度文库平台等百度网站上，机构继续使用百度文库平台，则视为对修订后的协议不持任何异议并同意遵守；如机构对协议存在异议，可以向百度书面提出退出百度文库平台，但机构在百度确认其退出许可前的行为，仍受本协议约束。<br />
+                                    <br />
+                                    二、定义<br />
+                                    2.1“百度文库”：是指由百度所有并运营的供网民在线分享文档的平台。网址为：http://wenku.baidu.com。<br />
+                                    2.2“百度文库平台”（以下简称“文库平台”）：是指由百度所有并运营的数字作品引入平台及各类客户端软件，供文库平台机构和用户发布或查询、使用数字作品。网址为：http:// wenku.baidu.com/org/index。<br />
+                                    2.3“数字作品”：指机构通过文库平台向用户提供并经百度平台通过的电子图书、文字作品、图片、电子杂志，电子报纸、课程资源等各类数字化作品，以及与数字作品相关的内容。就文字作品而言，包括标题、正文、附注等内容。<br />
+                                    2.4“用户”：是指在文库平台浏览、阅读、下载等使用数字作品的互联网用户和移动互联网用户。<br />
+                                    2.5“注册”：是指机构登陆文库平台，按要求填写相关信息并提供相关资质材料，在线申请并激活其服务账户的过程。注册的机构必须是拥有合法的数字作品相关版权及销售资质的法律实体，如机构无经营资格或违反本协议有关机构的规定或超越其民事权利能力或民事行为能力范围的，则本协议自始无效，一经发现，百度有权立即注销其服务账户，并追究其违约使用文库平台服务的法律责任。<br />
+                                    2.6 “机构服务账户”：即机构完成注册流程而获得的在使用文库平台服务的过程中必须与自设的账户密码共同使用的用户名。机构应妥善保管其服务账户及密码信息，不得以任何形式擅自转让或授权他人使用自己的服务账户。<br />
+                                    2.7“百度及百度关联公司”：百度是指北京百度网讯科技有限公司，百度关联公司是指百度各级母公司以及其他由百度、其母公司直接或间接拥有或控制的公司。<br />
+                                    <br />
+                                    三、平台模式<br />
+                                    3.1百度向机构提供文库平台及相关服务，使机构得以通过文库平台发布数字作品及相关信息并接受用户对数字作品的浏览、阅读、下载或其他使用需求。<br />
+                                    3.2自本协议生效后，机构在文库平台上传机构的数字作品，包括但不限于将机构数字作品在文库平台进行上传、复制、传输、通过信息网络传播、推广，供用户以搜索、浏览、阅读或者下载等方式使用；并将机构数字作品基于互联网或无线互联网形式面向全球用户进行推广。<br />
+                                    <br />
+                                    四、服务申请和开通<br />
+                                    4.1机构申请使用文库平台服务，必须同时满足以下条件：<br />
+                                    （1）机构如属于法人或其他组织的，需持有中华人民共和国合法、有效的执照和其他文库平台要求机构提供的证明材料；机构如为自然人的，需持有中华人民共和国有效身份证件和其他文库平台要求机构提供的证明材料；<br />
+                                    （2）确认完全同意《百度文库平台与机构协议》并自愿受其约束，注册成为文库平台的机构；<br />
+                                    （3）提交了上述第（1）项约定的相关证明材料并获得百度认可。<br />
+                                    4.2 服务将在以下条件满足后五（5）个工作日内开通：<br />
+                                    （1）机构将加盖公章的本协议确认函及其他百度要求的文件邮寄回百度指定的地址；<br />
+                                    （2）百度未发出拒绝提供服务的通知。<br />
+                                    4.3如机构在本协议生效后二十（20）个工作日内仍未满足本条第2款服务开通条件，或文库平台因任何原因告知机构拒绝提供服务，则文库平台有权不予开通服务，本协议即告终止。<br />
+                                    4.4 本协议约定的服务开通后，百度将按照本协议的约定为机构提供文库平台及相关服务，以便机构可通过该平台发布数字作品及相关信息并接受用户的使用请求。百度有权根据业务需要或网站维护等原因对服务提供方式进行修改、调整，或因服务升级或系统维护等原因中止服务。百度将在此等修改、调整或中止前通知机构。<br />
+                                    <br />
+                                    五、所有权与知识产权<br />
+                                    5.1百度保留对以下各项内容、信息完全的、不可分割的所有权及知识产权:<br />
+                                    （1）文库平台及其所有组成元素，包括但不限于所有内容、数据、技术、软件、代码、用户界面以及与其相关的任何衍生作品；<br />
+                                    （2）机构向文库平台提供的与该平台服务相关的任何信息及反馈（不包含机构向文库平台提供的数字作品）。<br />
+
+                                    六、机构的权利与义务<br />
+                                    6.1 机构保证拥有所提供数字作品的完整版权与有效授权，有权在百度在文库平台以本协议约定的方式使用数字作品。<br />
+                                    （1）对于非机构自有权利的数字作品，机构应当获得权利人的有效授权，确保机构有权通过文库平台上传、复制、传输、通过信息网络传播、推广该等数字作品。机构确保其获得的授权可以使百度合法地通过文库平台推广和按约使用数字作品。机构应自行向权利人支付可能存在的许可费用、版税以及其它应缴费用以获取权利人的有效授权。
+                                    （2）对于机构自有权利的数字作品，机构签署本协议即代表机构在文库平台推广和按约使用数字作品，包括但不限于将数字作品存储于文库平台提供的存储空间和通过文库平台进行信息网络传播等。<br />
+                                    6.3机构保证其所提供的全部作品（包括作品封面、图片、目录、正文内容、视频等）及在文库平台上传的全部信息符合中国法律、法规及国家政策的规定，不含任何违法、违规内容。<br />
+                                    6.4机构免费授予百度拥有全部数字作品及相关信息的信息网络传播权。百度有权将机构的数字作品基于互联网或无线互联网在文库平台及百度其它产品上进行传播或推广。<br />
+                                    6.5机构保证本协议的签署和履行并不侵犯任何第三方权益，也不会被任何第三方追索；机构保证提供的数字作品不存在任何权利瑕疵，没有侵犯任何第三方的合法权益；机构对所提供数字作品资源内容的真实性、准确性、完整性、合法性等负完全责任；如百度被第三方主张权利而产生任何纠纷、仲裁、诉讼，或遭到国家相关部门处理，由机构出面解决，承担全部法律责任并使百度免责，并赔偿因上述原因给百度造成的全部直接和间接损失。
+                                </p>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <script type="text/javascript">
+        function fileView(o, i) {
+            var file = o.files[0];
+            if (!/image\/\w+/.test(file.type)) {
+                alert("");
+                return false;
+            }
+            var reader = new FileReader();
+            reader.readAsDataURL(o.files[0]);
+            reader.onload = function () {
+                var pic = document.getElementById(i);
+                pic.src = this.result;
+            };
+        }
+
+        $(function () {
+            //侧导航高度自适应
+            onscrolls2();
+        })
+    </script>
+</body>
+</html>

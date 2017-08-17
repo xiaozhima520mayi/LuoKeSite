@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机构用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutPublic.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutMessage.css" rel="stylesheet" />
+    <link href="WebUI/css/nemberManage.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="head">
+        <a href="javascript://"><img src="WebUI/images/logo.png" /></a>
+    </div>
+    <div class="content" id="content">
+        <div class="leftNav" id="leftNav">
+            <ul>
+                <li><a href="InstitutUserC.html">机构主页</a></li>
+                <li><a href="InstitutMessage.html">机构信息</a></li>
+                <li><a href="SiteManage.html">场地管理</a></li>
+                <li><a href="ActivityManage.html">活动管理</a></li>
+                <li class="current"><a href="MemberManage.html">成员管理</a></li>
+                <li><a href="VenueRental.html">场地出租</a></li>
+                <li><a href="UserManage.html">用户管理</a></li>
+                <li><a href="NotificatMessage.html">通知消息</a></li>
+                <li><a href="StateMessage.html">统计管理</a></li>
+                <li><a href="AuthorityMessage.html">权限管理</a></li>
+                <li><a href="Announcements.html">公告管理</a></li>
+                <li><a href="MaterialDesign.html">物料设计</a></li>
+                <li><a href="CulturalResources.html">文化资源</a></li>
+            </ul>
+        </div>
+        <div class="rightCont">
+            <div class="right_head">
+                <p>
+                    <a href="javascript://"><i class="icon iconfont">&#xe604;</i></a>
+                    <b></b>
+                    <a href="javascript://">注销</a>
+                </p>
+                机构用户中心
+            </div>
+            <div id="cnt">
+                <div class="jg_title">
+                    <a href="javascript://" onclick="addarena()" class="click-link">添加成员</a>
+                    <h1>成员管理</h1>
+                    <p>添加成员，成员权限分配</p>
+                </div>
+                <div class="memberList">
+                    <ul>
+                        <li>
+                            <p><span></span><b>小芝麻</b></p>
+                            <i>创建者</i>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://" onclick="RoleSetting()">角色设置</a>
+                        </li>
+                        <li>
+                            <p><span></span><b>苗苗</b></p>
+                            <i>馆内成员</i>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://">角色设置</a>
+                        </li>
+                        <li>
+                            <p><span></span><b>金大圣</b></p>
+                            <i>商业合作</i>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://">角色设置</a>
+                        </li>
+                        <li>
+                            <p><span></span><b>袁大圣</b></p>
+                            <i>创建者</i>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://">角色设置</a>
+                        </li>
+                        <li>
+                            <p><span></span><b>徐飞</b></p>
+                            <i>创建者</i>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://">角色设置</a>
+                        </li>
+                        <li>
+                            <p><span></span><b>袁大圣</b></p>
+                            <i>创建者</i>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://">角色设置</a>
+                        </li>
+                        <li>
+                            <p><span></span><b>袁大圣</b></p>
+                            <i>创建者</i>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://">角色设置</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- 角色设置 -->
+    <div id="RoleSetting" style="display:none;">
+        <div class="layer-body addArena form-horizontal">
+            <h2 class="text-center">角色设置</h2>
+            <div class="form-group marginTop10" >
+                <label class="control-label" style="width:110px;">选择角色：</label>
+                <div class="controls">
+                    <select class="form-control col-md-2">
+                        <option>请选择类别</option>
+                        <option>场地管理者</option>
+                        <option>合作伙伴</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group tcenter" style="margin-top:30px;">
+                <button  data-ids=""class="btn green" id="save" type="button">保存</button>
+            </div>
+        </div>
+    </div>
+    <!-- 添加成员 -->
+    <div id="addArena" style="display:none;">
+        <div class="layer-body addArena form-horizontal">
+            <h2 class="text-center">添加成员</h2>
+            <div class="bm_swtich_all">
+                <ul class="bm_swtich">
+                    <li class="e">站内邀请</li>
+                    <li>链接邀请</li>
+                </ul>
+                <i class="bm_swtich_line"></i>
+            </div>
+            <fieldset class="form-body" style="width:550px; margin:20px auto;">
+                <div class="form-group">
+                    <div class="controls">
+                        <input type="text" class="form-control col-md-6 inset" />
+                        <a href="javascript://" class="yaoqing">邀请</a>
+                    </div>
+                    <div class="controls">
+                        <h1>输入成员用户名或邮箱</h1>
+                    </div>
+                </div>
+                <div class="form-group" style="display:none;">
+                    <div class="controls">
+                        <input type="text" class="form-control col-md-6 inset" value="https://luokr.cn/team/link/join?code=a53fe55db1ef444cbf03b2034d66a4d9" />
+                        <a href="javascript://" class="yaoqing">复制</a>
+                    </div>
+                    <div class="controls">
+                        <h1>发送上方邀请链接给成员</h1>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/plugins/layer/layer.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <script>
+        var addarena = function (e) {
+            layer.open({
+                type: 1,
+                content: $("#addArena").html(),
+                title: false,
+                area: '650px'
+            })
+        };
+        var RoleSetting = function (e) {
+            layer.open({
+                type: 1,
+                content: $("#RoleSetting").html(),
+                title: false,
+                area: '330px'
+            })
+        };
+        var keep = $("#keep");
+        var save = $("#save");
+        var edit = $("#edit");
+        var onkeep = function () {
+            keep.hide();
+            save.show();
+            edit.show();
+        };
+        var onsave = function (s) {
+            var id = $(s).attr("data-ids");//获取指定场馆的id值
+            //提交保存数据的逻辑
+            console.log(id);
+            keep.show();
+            save.hide();
+            edit.hide();
+            off();
+        }
+        $(function () {
+            //侧导航高度自适应
+            onscrolls2();
+
+            //活动管理处选项卡切换
+            $(".bm_swtich_all").each(function () {
+                var ths = $(this);
+                var tli = ths.find("li");
+                var tle = ths.find(".bm_swtich_line");
+                var tli_width = $(".bm_swtich li:first").width();
+                tle.width(tli_width);
+                tli.click(function () {
+                    var tw = $(this).width();
+                    tli.removeClass("e");
+                    $(this).addClass("e");
+                    tle.stop(true, true).animate({
+                        width: tw,
+                        left: $(this).position().left
+                    })
+                })
+            })
+        })
+    </script>
+</body>
+</html>

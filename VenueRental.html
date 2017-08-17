@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机构用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutPublic.css" rel="stylesheet" />
+    <!--日历-->
+    <link href="WebUI/plugins/rili/rili.css" rel="stylesheet" />
+    <link href="WebUI/css/SiteManage.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="head">
+        <a href="javascript://"><img src="WebUI/images/logo.png" /></a>
+    </div>
+    <div class="content" id="content">
+        <div class="leftNav" id="leftNav">
+            <ul>
+                <li><a href="InstitutUserC.html">机构主页</a></li>
+                <li><a href="InstitutMessage.html">机构信息</a></li>
+                <li><a href="SiteManage.html">场地管理</a></li>
+                <li><a href="ActivityManage.html">活动管理</a></li>
+                <li><a href="MemberManage.html">成员管理</a></li>
+                <li class="current"><a href="VenueRental.html">场地出租</a></li>
+                <li><a href="UserManage.html">用户管理</a></li>
+                <li><a href="NotificatMessage.html">通知消息</a></li>
+                <li><a href="StateMessage.html">统计管理</a></li>
+                <li><a href="AuthorityMessage.html">权限管理</a></li>
+                <li><a href="Announcements.html">公告管理</a></li>
+                <li><a href="MaterialDesign.html">物料设计</a></li>
+                <li><a href="CulturalResources.html">文化资源</a></li>
+            </ul>
+        </div>
+        <div class="rightCont">
+            <div class="right_head">
+                <p>
+                    <a href="javascript://"><i class="icon iconfont">&#xe604;</i></a>
+                    <b></b>
+                    <a href="javascript://">注销</a>
+                </p>
+                场地管理中心
+            </div>
+            <div id="cnt" class="silde-content">
+                <!-- 右边内容主体块 -->
+                <div class="jg_title">
+                    <a href="javascript://" onclick="addarena()" class="click-link">添加场地</a>
+                    <h1>场地出租</h1>
+                    <p>添加可供租凭的场地</p>
+                </div>
+                <div class="arena cont">
+                    <div class="col-arena">
+                        <h2>绍兴图书馆镜湖新馆</h2>
+                        <div id="site_1" class="thums site clearfix">
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">空调</span>
+                                            <span class="badge">音响</span>
+                                            <span class="badge">讲台</span>
+                                            <span class="badge">投影</span>
+                                            <span class="badge">灯光</span>
+                                            <span class="badge">自定义</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="unread" onclick="bat()">42</span>
+                                <a href="javascript://" class="closes">×</a>
+                            </div>
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript://" class="closes">×</a>
+                            </div>
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript://" class="closes">×</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-arena">
+                        <h2>绍兴图书馆</h2>
+                        <div id="site_2" class="thums site clearfix">
+                            <div class="thum">
+                                <div class="ins">
+                                    <h3>报告厅</h3>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">楼层：</label>
+                                        <b class="label-body">1F</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">座位数：</label>
+                                        <b class="label-body">120</b>
+                                    </div>
+                                    <div class="label-dlt">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <b class="label-body">120㎡</b>
+                                    </div>
+                                    <div class="label-dlt label-device">
+                                        <label class="label-left pull-left">面积：</label>
+                                        <div class="label-body">
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                            <span class="badge">麦克风</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="javascript://" class="closes">×</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <!-- 报告厅 -->
+            <div id="add" style="display:none;">
+                <div class="jg_title" style="position:relative;">
+                    <h1>报告厅</h1>
+                    <div class="bm_swtich_all">
+                        <ul class="bm_swtich">
+                            <li class="e">租用申请</li>
+                            <li>租用场次</li>
+                        </ul>
+                        <i class="bm_swtich_line"></i>
+                    </div>
+                </div>
+                <div class="layer-body">
+                    <!--租用申请-->
+                    <div class="venueList" style="display:none">
+                        <ul>
+                            <li>
+                                <div>
+                                    <a href="javascript://">上海光影演艺有限公司<b>NEW</b></a>
+                                    <div class="fields">
+                                        <strong>申请人ID：3153242@qq.com</strong>
+                                        <strong>联系人：王女士</strong>
+                                        <strong>联系电话：15810439276</strong>
+                                        <strong>需求场次：2月22日  9：00-11：30</strong>
+                                    </div>
+                                </div>
+                                <a href="javascript://" class="ven_ico">
+                                    <i class="icon iconfont" onclick="LeasedSpace()">&#xe606;</i>
+                                </a>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="javascript://">上海光影演艺有限公司<b>NEW</b></a>
+                                    <div class="fields">
+                                        <strong>申请人ID：3153242@qq.com</strong>
+                                        <strong>联系人：王女士</strong>
+                                        <strong>联系电话：15810439276</strong>
+                                        <strong>需求场次：2月22日  9：00-11：30</strong>
+                                    </div>
+                                </div>
+                                <a href="javascript://" class="ven_ico">
+                                    <i class="icon iconfont">&#xe606;</i>
+                                </a>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="javascript://">上海光影演艺有限公司<b>NEW</b></a>
+                                    <div class="fields">
+                                        <strong>申请人ID：3153242@qq.com</strong>
+                                        <strong>联系人：王女士</strong>
+                                        <strong>联系电话：15810439276</strong>
+                                        <strong>需求场次：2月22日  9：00-11：30</strong>
+                                    </div>
+                                </div>
+                                <a href="javascript://" class="ven_ico">
+                                    <i class="icon iconfont">&#xe606;</i>
+                                </a>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="javascript://">上海光影演艺有限公司<b>NEW</b></a>
+                                    <div class="fields">
+                                        <strong>申请人ID：3153242@qq.com</strong>
+                                        <strong>联系人：王女士</strong>
+                                        <strong>联系电话：15810439276</strong>
+                                        <strong>需求场次：2月22日  9：00-11：30</strong>
+                                    </div>
+                                </div>
+                                <a href="javascript://" class="ven_ico">
+                                    <i class="icon iconfont">&#xe606;</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--租用场次-->
+                    <div class="RentScreen">
+                        <div class="rentSLeft fleft">
+                            <h1>2015年12月22日</h1>
+                            <h2>星期二</h2>
+                        </div>
+                        <div class="rentSRight fright">
+                            <div class="calendar">
+                                <div class="bor0127" id="calendar_contain">
+                                    <table id="calendar" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="7" style="border-bottom: 1px solid #CDCFD3; padding-top: 10px;">
+                                                    <p id="calendar_title" style="float:left;color:#333;font-weight:normal;font-size:16px;">2015年11月</p>
+                                                    <div class="rili_switch">
+                                                        <p title="上一月份" onclick="JCalendar.update(-1);return false" class="prev"><i class="icon iconfont">&#xe601;</i></p>
+                                                        <p class="day">今天</p>
+                                                        <p title="下一月份" onclick="JCalendar.update(1);return false" class="next"><i class="icon iconfont">&#xe602;</i></p>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td style="background:#fff;">日</td>
+                                                <td style="background:#fff">一</td>
+                                                <td style="background:#fff">二</td>
+                                                <td style="background:#fff">三</td>
+                                                <td style="background:#fff">四</td>
+                                                <td style="background:#fff">五</td>
+                                                <td style="background:#fff;">六</td>
+                                            </tr>
+                                            <tr>
+                                                <td><div onmouseover="JCalendar.click(this)">1</div></td>
+                                                <td><div class="has" onmouseover="JCalendar.click(this)">2</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">3</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">4</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">5</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">6</div></td>
+                                                <td><div class="has" onmouseover="JCalendar.click(this)">7</div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="has" onmouseover="JCalendar.click(this)">8</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">9</div></td>
+                                                <td><div class="has" onmouseover="JCalendar.click(this)">10</div></td>
+                                                <td><div class="has" onmouseover="JCalendar.click(this)">11</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">12</div></td>
+                                                <td><div id="c_today" class="c_today" onmouseover="JCalendar.click(this)">13</div></td>
+                                                <td><div class="current has" onmouseover="JCalendar.click(this)">14</div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="has" onmouseover="JCalendar.click(this)">15</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">16</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">17</div></td>
+                                                <td><div class="has" onmouseover="JCalendar.click(this)">18</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">19</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">20</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">21</div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div onmouseover="JCalendar.click(this)">22</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">23</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">24</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">25</div></td>
+                                                <td><div class="has" onmouseover="JCalendar.click(this)">26</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">27</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">28</div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div onmouseover="JCalendar.click(this)">29</div></td>
+                                                <td><div onmouseover="JCalendar.click(this)">30</div></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="2" width="280">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="7" style="background:#fff; display:none;">
+                                                    <p title="上一年份" onmouseover="this.style.color='#c00'" onmouseout="this.style.color='#616161'" onclick="JCalendar.update(-12);return false" style="float:left;color:#616161;margin-right:4px;margin-left:4px;cursor:pointer;">&lt;&lt;上一年份</p>
+                                                    <p title="下一年份" onclick="JCalendar.update(12);return false" onmouseover="this.style.color='#c00'" onmouseout="this.style.color='#616161'" style="float:right;margin-left:4px;color:#616161;cursor:pointer;">下一年份&gt;&gt;</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="dashiji" id="rili_info" style="width:330px; display:none">
+                                    <div class="dashiji_page"><span class="d_l2"></span><span class="d_r2"></span> <i>1</i>/1</div>
+                                    <div class="dashiji_time">2015年11月14日</div>
+                                    <div class="dashiji_box">
+                                        <a href="javascript://" class="dsjImg">
+                                            <img src="WebUI/images/upload/act-img02.png" style="width:126px; height:88.6px;" />
+                                        </a><b><a href="javascript://">LOL妹子杯成都赛区8进4</a></b>
+                                        <p>即将开始的LOL妹子杯成都赛区的8进4比赛即将开始，妹子们的战争火药味也越来越浓重。到底谁才能杀入决赛？....<a href="javascript://">【查看详情】</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="changci">
+                                <h1>未选定场次</h1>
+                                <div class="form-group text-center">
+                                    <button type="button" class="btn green">创建场次</button>
+                                </div>
+                            </div>
+                            <fieldset class="form-body form-horizontal marginTop10">
+                                <div class="form-group">
+                                    <label class="control-label" style="width:110px;">出租时段：</label>
+                                    <div class="controls shiduan">
+                                        <em>开始</em>
+                                        <input type="text" class="form-control col-md-3" placeholder="选择日期" style="margin-left:0" />
+                                    </div>
+                                    <div class="controls shiduan marginTop10" style="margin-left:120px;">
+                                        <em>结束</em>
+                                        <input type="text" class="form-control col-md-3" placeholder="选择日期"style="margin-left:0" />
+                                    </div>
+                                </div>
+                                <div class="form-group marginTop10">
+                                    <label class="control-label" style="width:110px;">重复：</label>
+                                    <div class="controls">
+                                        <select class="form-control col-md-3">
+                                            <option>时段是否重复</option>
+                                            <option>不重复</option>
+                                            <option>每日</option>
+                                            <option>每周</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group marginTop10">
+                                    <label class="control-label" style="width:110px;">出租状态：</label>
+                                    <div class="controls">
+                                        <span style="display:none;">状态未发布</span>
+                                        <span style=" color: #009933;padding-right:10px;">已租</span>
+                                        <span style=" color: #ff6633">取消租用</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" style="width:110px;">承租单位：</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control col-md-3" value="上海上业信息科技有限公司" style="margin-left: 0; color: #2e2e2e; " />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" style="width:110px;">联系电话：</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control col-md-3" value="021-53426543" style="margin-left: 0; color: #2e2e2e; " />
+                                    </div>
+                                </div>
+                                <div class="form-group text-right ">
+                                    <button type="button" class="btn green" style="padding:4px 10px 6px;">发布</button>
+                                    <button type="button" class="btn" style="padding:4px 10px 6px; margin-left:10px;">取消</button>
+                                    <!--撤销发布加”orange“-->
+                                    <button type="button" class="btn orange" style="padding:4px 10px 6px; display:none;">撤销发布</button>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新建场地块 -->
+    <div id="addArena" style="display:none;">
+        <div class="layer-body addArena form-horizontal">
+            <h2 class="text-center">添加场地</h2>
+            <fieldset class="form-body">
+                <div class="form-group marginTop10">
+                    <label class="control-label" style="width:110px;">选择场地：</label>
+                    <div class="controls">
+                        <select class="form-control col-md-2">
+                            <option>请选择类别</option>
+                            <option>报告厅（一）</option>
+                            <option>放映厅（一）</option>
+                            <option>报告厅（一）</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group text-center" style="margin-top:30px;">
+                    <button type="button" class="btn green">保存</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <!--场地租用-->
+    <div id="LeasedSpace" style="display:none;">
+        <div class="layer-body addArena form-horizontal">
+            <h2 class="text-center">场地租用</h2>
+            <fieldset class="form-body marginTop10">
+                <div class="form-group">
+                    <label class="control-label" style="width:110px;">承租单位：</label>
+                    <div class="controls">
+                        <input type="text" class="form-control col-md-3" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" style="width:110px;">联系电话：</label>
+                    <div class="controls">
+                        <input type="text" class="form-control col-md-3" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" style="width:110px;">申请人：</label>
+                    <div class="controls">
+                        <input type="text" class="form-control col-md-3" />
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <button type="button" class="btn green">保存</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/plugins/layer/layer.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <script>
+        var rili_json = { "nowdate": "2015-11-13", "showdate": "2015-11-14", "list": [{ "theyear": "2015", "data": [{ "themonth": "09", "item": [{ "thedate": "30", "url": "http://mobile.it168.com/a2015/0928/1765/000001765793.shtml", "imgurl": "http://image4.it168.com/2015/10/30/b5573d3d-172d-43f4-afbe-8ccaa0c78f98.jpg", "title": "谷歌30日发布新机＋新系统", "info": "谷歌将于太平洋时间9月29日早上9点(北京时间9月30日零点)于旧金山召开2015年度新品发布会，届时两款Nexus手机、最终版“棉花糖”Android系统" }] }, { "themonth": "10", "item": [{ "thedate": "06", "url": "http://mobile.it168.com/a2015/0915/1762/000001762076.shtml", "imgurl": "http://image4.it168.com/2015/10/30/17169dd0-df3d-4113-8a4c-a3612769e2bf.jpg", "title": "微软10月6日发布Lumia 950", "info": "微软已经正式向媒体发出邀请函，宣布于今年10月6日在纽约召开新品发布会，推出一系列Win 10系统硬件产品。最有可能将是微软Lumia 950、Lumia 950XL以及平板电脑Surface Pro 4，预计还有全新智能手环同步登场。" }, { "thedate": "11", "url": "http://mobile.it168.com/a2015/0925/1765/000001765470.shtml", "imgurl": "http://image4.it168.com/2015/10/30/1c27cdf5-f4ad-4534-86b9-e30e116dff1d.jpg", "title": "扣人心弦 中兴AXON天机新品", "info": "中兴“AXON天机”旗舰系列战略发布会的实体邀请函，该邀请函为长方体纯黑盒体，盒盖正面以烫金字呈现本次中兴发布会的品牌主题“用心·不凡”。10月11日，深圳·京基100 瑞吉酒店五楼。猜测此次发布会的主角可能是即将发布的AXON天机Mini。" }, { "thedate": "13", "url": "http://dc.it168.com/tu/1768354_1.shtml", "imgurl": "http://image4.it168.com/2015/10/30/bd99f965-3aeb-4926-8708-a8f341702fe1.jpg", "title": "三剑齐发！佳能三款新机现场体验", "info": "佳能在2015年10月13日正式发布了三款新机，分别是定位入门的微单EOS M10、一英寸大底定位专业便携G5X和主打小巧时尚随身携带的G9X。在下午的佳能发布会上，我们已经率先体验了这三款新机，下面来看小编的现场体验简评吧。" }, { "thedate": "14", "url": "http://mobile.it168.com/tu/1767819_1.shtml#1", "imgurl": "http://image4.it168.com/2015/10/30/f689d424-4cab-4a87-9ba2-28ae34c23023.jpg", "title": "手机拍照讲堂第二课：寂寞旅途", "info": "一个面包，一盏台灯，还有一个小纸人，再加上一台手机简单的几样道具就能打造一个属于自己的影像故事，当然这里还得得益于三星Galaxy S6 edge+强大的专业模式才能拍出如此干净有趣的画面。" }, { "thedate": "19", "url": "http://digital.it168.com/tu/1770746_1.shtml", "imgurl": "http://image4.it168.com/2015/10/30/9e47c4ba-d85a-4b12-bdb9-c951fb8cf618.jpg", "title": "1999元大玩具 小米九号平衡车发布", "info": "前两天，酝酿许久后，新品“九号平衡车”跟着小米电视3发布的浪潮也出现在了大众的眼光之中，售价1999元，我们来看下它的表现吧。" }, { "thedate": "19", "url": "http://elec.it168.com/a2015/1019/1769/000001769583.shtml", "imgurl": "http://image4.it168.com/2015/10/30/c08b4ed0-65d6-48c2-b7e6-a1e7621f2770.jpg", "title": "60寸分体设计 小米电视3发布", "info": "10.19日小米召开新品发布会，会前虚晃一枪在所有人都以为是相机的时候，雷军突然发微博声明其实我们要发的是小米电视3哟~" }, { "thedate": "20", "url": "http://mobile.it168.com/a2015/1014/1768/000001768479.shtml", "imgurl": "http://image4.it168.com/2015/10/30/10611067-06a9-418a-8cbb-6d6d8ab83175.jpg", "title": "OPPO R7S国内于10月20日发布", "info": "OPPO R7系列双机——R7和R7 Plus都时隔5个月后，R7宣布准备与大家见面，而从日前工信部曝光的身份认证信息来看，它更像是对于家族产品线的补充而非取代升级。" }, { "thedate": "21", "url": "http://mobile.it168.com/tu/1768101_1.shtml#3", "imgurl": "http://image4.it168.com/2015/10/30/5125cf47-c9f3-4f0c-82bb-1da6a5c74ee4.jpg", "title": "又来全金属 魅蓝新品21日发布", "info": "魅族昨天放出了将会举行发布会的消息，并且邀请邓紫棋作为发布会的嘉宾，今天早上我们已经收到了魅族发布会的邀请函，魅族将会在10月21日于北京国家会议中心举行新品发布会，这款新品命名为“魅蓝metal”，采用金属后盖设计。" }, { "thedate": "22", "url": "http://sacc.it168.com", "imgurl": "http://image4.it168.com/2015/10/30/cf0dd564-3a5c-4450-ad32-cf8ba22969ad.png", "title": "互联网+架构师盛宴：SACC2015再创新高", "info": "2015第七届中国系统架构师大会，10月22日-24日在北京新云南皇冠假日酒店顺利举行，本次大会以“互联网+重塑IT架构”为主题，站在互联网+的风口上，诚邀百余名演讲嘉宾，打造一场架构师腾飞的技术盛会。参展和合作企业28家，图书出版社5家；大会购票及赠票用户达到2700多人，现场参会人数达2500人。" }, { "thedate": "23", "url": "http://mobile.it168.com/a2015/1012/1767/000001767877.shtml", "imgurl": "http://image4.it168.com/2015/10/30/5a6c0f60-3588-4b12-a9e5-d2cfcb38c076.jpg", "title": "Gigaset ME本月23日国内发布", "info": "前不久，德国通信品牌Gigaset于IFA发布智能手机ME系列-ME,ME pro,ME pure三款新品，三款手机同属ME系列。源自德国品质的智能手机厂商将10月23日在北京召开“品 德之美 Gigaset智能手机品鉴会。本次将会亮相ME系当中主推的Gigaset ME。" }, { "thedate": "27", "url": "http://mobile.it168.com/a2015/1023/1770/000001770961.shtml", "imgurl": "http://image4.it168.com/2015/10/30/b66d7b44-1c36-4f8e-8117-5cd421c273bf.jpg", "title": "进化2 乐视手机2代27日发布", "info": "这次的邀请函主打“进化2”主题，白色的盒子中竟然装着一枚鱼类化石，这枚化石在右上角印有“进化2”主题，底部有乐视logo。而发布会将于10月27日下午2:30在万事达中心举办，我们也将第一时间亲临现场，解读进化的秘密。" }, { "thedate": "29", "url": "http://mobile.it168.com/a2015/1021/1770/000001770274.shtml", "imgurl": "http://image4.it168.com/2015/10/30/935e0303-fb4b-4402-891e-1f8d091725a1.png", "title": "同心环 一加手机新品29日发布", "info": "一加官方将会在10月29日举办发布会，正式推出一加手机X，并在全球6个城市16：30同时发布(北京、伦敦、纽约、旧金山、新德里、雅加达)。据称将于“双十一”正式开卖。" }, { "thedate": "29", "url": "http://mobile.it168.com/a2015/1012/1767/000001767919.shtml", "imgurl": "http://image4.it168.com/2015/10/30/59d96ea7-e3fe-4498-b33f-7bed195d2848.jpg", "title": "或4699 索尼Z5系列29日发布", "info": "索尼Z5系列新品即将于中国大陆发布，不过与前几代产品一样登陆国内的仍然没有迷你款Z5 Compact。目前有消息爆料称售价将为4699元/5499元，索粉们又可以充值信仰了。" }, { "thedate": "30", "url": "http://mp.weixin.qq.com/s?__biz=MjM5NjU1MzM1Mw==&mid=401345538&idx=1&sn=14424f862f81e38f92e305548639e7a6#wechat_redirect", "imgurl": "http://image4.it168.com/2015/10/29/94f0d49a-3a81-45a7-9275-6aba96662ac4.jpg", "title": "拍照要修图 听听修图创始人怎么说？", "info": "本期沙龙邀请到泼辣修图创始人——王博睿，北京时间21点整，让远在美国、时差12小时的他来告诉你，怎样才能修出独特风格的图片，让你从此正式告别X图秀秀。" }] }, { "themonth": "11", "item": [{ "thedate": "02", "url": "http://weibo.com/3771196911/D1cWEiqdC?from=page_1006063771196911_profile&wvr=6&mod=weibotime&type=comment#_rnd1446185146566", "imgurl": "http://image4.it168.com/2015/10/30/35f34593-a057-48b2-a396-c03194041bcc.jpg", "title": "酷开旗舰新品发布会", "info": "11月2日酷开要发布新品电视，据说将会是一款定位轻奢一族,倡导“轻奢华，新时尚”的生活理念产品。" }, { "thedate": "07", "url": "http://notebook.it168.com/a2015/1107/1775/000001775459.shtml", "imgurl": "http://image4.it168.com/2015/11/11/39ac276e-de17-4731-a1ef-960315d174f4.jpg", "title": "LOL妹子杯成都火爆开战", "info": "11月7日下午由IT168主办，雷神总冠名的2015妹子杯LOL大赛大成都赛区32强线下赛正式开赛了!现场妹子络绎不绝，一起随小编来看看吧。" }, { "thedate": "08", "url": "http://notebook.it168.com/a2015/1108/1775/000001775505.shtml", "imgurl": "http://image4.it168.com/2015/11/11/d69a213a-d4e4-4fd0-aea2-8e92fe570a82.jpg", "title": "LOL妹子杯成都线下赛第二日", "info": "相信大家昨天已经跟随小编一起领略了成都赛区妹子们的电竞风采，今日是成都赛区线下赛的第二日，现场火爆程度更胜昨日，还等什么，快跟小编一起来看!" }, { "thedate": "08", "url": "http://elec.it168.com/a2015/1102/1773/000001773515.shtml", "imgurl": "http://image4.it168.com/2015/11/2/7766aaae-aa07-4777-b1ad-98bf3ea720f4.jpg", "title": "创维2016新品发布会", "info": "11月8日创维在江苏省句容市将发布2016年新品，目前没有透露新品信息，只知道多为白电产品，如冰箱、洗衣机创新性产品将和大家见面。" }, { "thedate": "10", "url": "http://mp.weixin.qq.com/s?__biz=MjM5NjU1MzM1Mw==&mid=402107017&idx=1&sn=611ad009bdfdc18a415c5cf98240bde5#rd", "imgurl": "http://image4.it168.com/2015/11/6/f5bb5743-b4c0-425d-8df4-2853b23f7121.jpg", "title": "滕飞老师告诉你怎样在“双11”买相机", "info": "相机那么多，我该怎么选？11月10日晚8点，听【相机笔记】创始人——滕飞老师告诉你，怎么才能选到自己得心应手的相机。" }, { "thedate": "11", "url": "http://live.it168.com/364.html", "imgurl": "http://image4.it168.com/2015/10/30/246e536e-a27b-49a0-b647-49111f541915.jpg", "title": "双11就要买不停 剁手党必备购物攻略", "info": "今天是喜闻乐见的11.11，我们不提对象只提荷包，大家一定把自己的荷包抽肿了吧？为节省时间小编送上购物攻略，抓紧时间买买买！" }, { "thedate": "14", "url": "http://lol.it168.com/Home/Chengdu", "imgurl": "http://image4.it168.com/2015/11/11/e8867b63-470e-49bc-aaff-8bf1e3c774e3.jpg", "title": "LOL妹子杯成都赛区8进4", "info": "即将开始的LOL妹子杯成都赛区的8进4比赛即将开始，妹子们的战争火药味也越来越浓重。到底谁才能杀入决赛？" }, { "thedate": "15", "url": "http://lol.it168.com/Home/Chengdu", "imgurl": "http://image4.it168.com/2015/11/11/c47eda51-807a-427d-8670-2d1283ad6183.jpg", "title": "LOL妹子杯成都赛区总决赛", "info": "到底谁才是电竞女王？到底谁才能走向神坛？一场软妹到女神的华丽蜕变！今日，看妹子们决战紫禁之巅！" }, { "thedate": "18", "url": "http://mp.weixin.qq.com/s?__biz=MzAxMzI4NTkyMg==&mid=400435912&idx=1&sn=a242ddd9e7e60d81714885d328525dc3#rd", "imgurl": "http://image4.it168.com/2015/11/11/ea7e0be1-552c-40db-901a-3c6810cc121a.jpg", "title": "暴风魔镜新品发布会", "info": "日前，试客收到暴风魔镜神秘邀请函，邀请函显示，暴风魔镜将于本月18日(下周三)下午，在中国电影导演中心举办一场名为“VR Here|虚拟现实引爆日”的新品发布会。" }, { "thedate": "26", "url": "http://mobile.it168.com/a2015/1102/1773/000001773521.shtml", "imgurl": "http://image4.it168.com/2015/11/2/a526ba3d-103f-4d10-9f12-42e1db7613b0.jpg", "title": "华为Mate8发布时间确定26日", "info": "华为Mate8的宣传海报主体为一个大大的数字“8”，海报下方为标示了“不仅仅是一次突破 MATE归来”，以及发布日期：2015.11.26。年的Mate系列新旗舰能否再续此前的辉煌令Mate8再发布前的数月就已成为大家关注的焦点。" }] }] }] }
+    </script>
+    <!--日历控件-->
+    <script src="WebUI/plugins/rili/rili.js"></script>
+    <script type="text/javascript">
+        var add = function (e) {
+            $("#add").show().find("#save").attr("data-ids", e);
+            $("#cnt").hide()
+        };
+        var bat = function (e) {
+            $("#cnt").hide();
+            $("#add").show()
+        };
+        var addarena = function (e) {
+            layer.open({
+                type: 1,
+                content: $("#addArena").html(),
+                title: false,
+                area: '330px'
+            })
+        };
+        var LeasedSpace = function (e) {
+            layer.open({
+                type: 1,
+                content: $("#LeasedSpace").html(),
+                title: false,
+                area: '400px'
+            })
+        };
+        var keep = $("#keep");
+        var save = $("#save");
+        var edit = $("#edit");
+        var onkeep = function () {
+            keep.hide();
+            save.show();
+            edit.show();
+        };
+        var onsave = function (s) {
+            var id = $(s).attr("data-ids");//获取指定场馆的id值
+            //提交保存数据的逻辑
+            console.log(id);
+
+            keep.show();
+            save.hide();
+            edit.hide();
+        }
+        $(function () {
+            //侧导航高度自适应
+            onscrolls2();
+        })
+
+        //报告厅处选项卡切换
+        $(".bm_swtich_all").each(function () {
+            var ths = $(this);
+            var tli = ths.find("li");
+            var tle = ths.find(".bm_swtich_line");
+            var tli_width = $(".bm_swtich li:first").width();
+            tle.width(tli_width);
+            tli.click(function () {
+                var tw = $(this).width();
+                tli.removeClass("e");
+                $(this).addClass("e");
+                tle.stop(true, true).animate({
+                    width: tw,
+                    left: $(this).position().left
+                })
+            })
+        })
+
+        /*日历控件*/
+        function LiSelectstart(id) {
+            if (document.getElementById(id)) {
+                var sfEls = document.getElementById(id).getElementsByTagName("li");
+                for (var i = 0; i < sfEls.length; i++) {
+                    sfEls[i].onmouseover = function () {
+                        this.className = "all";
+                    }
+                    sfEls[i].onmouseout = function () {
+                        this.className = "";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

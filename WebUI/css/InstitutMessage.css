@@ -1,0 +1,8 @@
+﻿@charset "utf-8";
+.silde-content { padding-top: 20px; }
+.silde-content h2 { font-size: 24px;padding-left:50px;border-left: 8px solid #636a7c;margin-left: 5px; margin-bottom: 20px;height:25px;line-height:25px;}
+
+.buslic .media-left {margin-right: 20px;}
+.buslic .media-body ol {line-height: 2.4;}
+.xieyi .detail { height: 200px;overflow-y: scroll;padding: 7px 8px;}
+.form-horizontal .form-group label{ font-size:14px;}

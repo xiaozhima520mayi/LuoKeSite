@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机构用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutPublic.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <link href="WebUI/css/notificat.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="head">
+        <a href="javascript://"><img src="WebUI/images/logo.png" /></a>
+    </div>
+    <div class="content" id="content">
+        <div class="leftNav" id="leftNav">
+            <ul>
+                <li><a href="InstitutUserC.html">机构主页</a></li>
+                <li><a href="InstitutMessage.html">机构信息</a></li>
+                <li><a href="SiteManage.html">场地管理</a></li>
+                <li><a href="ActivityManage.html">活动管理</a></li>
+                <li><a href="MemberManage.html">成员管理</a></li>
+                <li><a href="VenueRental.html">场地出租</a></li>
+                <li><a href="UserManage.html">用户管理</a></li>
+                <li class="current"><a href="NotificatMessage.html">通知消息</a></li>
+                <li><a href="StateMessage.html">统计管理</a></li>
+                <li><a href="AuthorityMessage.html">权限管理</a></li>
+                <li><a href="Announcements.html">公告管理</a></li>
+                <li><a href="MaterialDesign.html">物料设计</a></li>
+                <li><a href="CulturalResources.html">文化资源</a></li>
+            </ul>
+        </div>
+        <div class="rightCont">
+            <div class="right_head">
+                <p>
+                    <a href="javascript://"><i class="icon iconfont">&#xe604;</i></a>
+                    <b></b>
+                    <a href="javascript://">注销</a>
+                </p>
+                机构用户中心
+            </div>
+            <div id="cnt">
+                <div class="jg_title">
+                    <h1>通知消息</h1>
+                    <div class="bm_swtich_all">
+                        <ul class="bm_swtich">
+                            <li class="e">用户消息</li>
+                            <li>系统消息</li>
+                        </ul>
+                        <i class="bm_swtich_line"></i>
+                    </div>
+                </div>
+                <!--用户消息-->
+                <div style="display:none;">
+                    <!--消息列表-->
+                    <div class="notificat" style="display:none;">
+                        <ul class="history">
+                            <li>
+                                <div class="notif_div">
+                                    <dl>
+                                        <dt><img src="WebUI/images/user2.jpg" /></dt>
+                                        <dd>
+                                            <a href="javascript://">小芝麻</a>
+                                            <p>该如何预约报告厅？</p>
+                                        </dd>
+                                    </dl>
+                                    <b style="display:block">已回复</b>
+                                    <em>15:07</em>
+                                    <i class="icon iconfont">&#xe60d;</i>
+                                </div>
+                                <div class="reply_message" style="display:block;">
+                                    <div class="textaea">
+                                        <textarea style="font-size:12px;line-height:20px;height:120px;"></textarea>
+                                        <p>你还可以输入200个字符</p>
+                                    </div>
+                                    <div class="form-group" style="margin-left:70px;">
+                                        <button type="button" class="btn green" style="margin-right:10px;">发送</button>
+                                        <button type="button" class="btn">收起</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="notif_div">
+                                    <dl>
+                                        <dt><img src="WebUI/images/user2.jpg" /></dt>
+                                        <dd>
+                                            <a href="javascript://">小芝麻</a>
+                                            <p>该如何预约报告厅？</p>
+                                        </dd>
+                                    </dl>
+                                    <b>已回复</b>
+                                    <em>15:07</em>
+                                    <i class="icon iconfont">&#xe60d;</i>
+                                </div>
+                                <div class="reply_message">
+                                    <div class="textaea">
+                                        <textarea style="font-size:12px;line-height:20px;height:120px;"></textarea>
+                                        <p>你还可以输入200个字符</p>
+                                    </div>
+                                    <div class="form-group" style="margin-left:70px;">
+                                        <button type="button" class="btn green" style="margin-right:10px;">发送</button>
+                                        <button type="button" class="btn">收起</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="notif_div">
+                                    <dl>
+                                        <dt><img src="WebUI/images/user2.jpg" /></dt>
+                                        <dd>
+                                            <a href="javascript://">小芝麻</a>
+                                            <p>该如何预约报告厅？</p>
+                                        </dd>
+                                    </dl>
+                                    <b>已回复</b>
+                                    <em>15:07</em>
+                                    <i class="icon iconfont">&#xe60d;</i>
+                                </div>
+                                <div class="reply_message">
+                                    <div class="textaea">
+                                        <textarea style="font-size:12px;line-height:20px;height:120px;"></textarea>
+                                        <p>你还可以输入200个字符</p>
+                                    </div>
+                                    <div class="form-group" style="margin-left:70px;">
+                                        <button type="button" class="btn green" style="margin-right:10px;">发送</button>
+                                        <button type="button" class="btn">收起</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--聊天记录-->
+                    <div class="chatBox">
+                        <h2><i class="icon iconfont">&#xe601;</i>与小芝麻的聊天</h2>
+                        <div class="reply_message" style="display:block;">
+                            <div class="textaea">
+                                <textarea style="font-size:12px;line-height:20px;height:120px;"></textarea>
+                                <p>你还可以输入200个字符</p>
+                            </div>
+                            <div class="form-group" style="margin-left:10px;">
+                                <button type="button" class="btn green" style="margin-right:10px;">发送</button>
+                                <button type="button" class="btn">收起</button>
+                            </div>
+                        </div>
+                        <div class="chat_history">
+                            <h6>最近20条聊天记录</h6>
+                            <ul class="history">
+                                <li>
+                                    <div class="notif_div">
+                                        <dl>
+                                            <dt><img src="WebUI/images/user2.jpg" /></dt>
+                                            <dd>
+                                                <a href="javascript://">小芝麻</a>
+                                                <p>为什么一些演唱会是可以选座位的为什么一些演唱会是可以选座位的为什么一些演唱会是可以选座位的为什么一些演唱会是可以选座位的，一些是不可以选座的！这个是怎么定的？？</p>
+                                            </dd>
+                                        </dl>
+                                        <em>15:07</em>
+                                    </div>
+                                    <div class="reply_message">
+                                        <div class="textaea">
+                                            <textarea style="font-size:12px;line-height:20px;height:120px;"></textarea>
+                                            <p>你还可以输入200个字符</p>
+                                        </div>
+                                        <div class="form-group" style="margin-left:70px;">
+                                            <button type="button" class="btn green" style="margin-right:10px;">发送</button>
+                                            <button type="button" class="btn">收起</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="notif_div">
+                                        <dl>
+                                            <dt><img src="WebUI/images/user2.jpg" /></dt>
+                                            <dd>
+                                                <a href="javascript://">小芝麻</a>
+                                                <p>为什么一些演唱会是可以选座位的一些是不可以选座的！这个是怎么定的？？</p>
+                                            </dd>
+                                        </dl>
+                                        <em>15:07</em>
+                                    </div>
+                                    <div class="reply_message">
+                                        <div class="textaea">
+                                            <textarea style="font-size:12px;line-height:20px;height:120px;"></textarea>
+                                            <p>你还可以输入200个字符</p>
+                                        </div>
+                                        <div class="form-group" style="margin-left:70px;">
+                                            <button type="button" class="btn green" style="margin-right:10px;">发送</button>
+                                            <button type="button" class="btn">收起</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="notif_div">
+                                        <dl>
+                                            <dt><img src="WebUI/images/user2.jpg" /></dt>
+                                            <dd>
+                                                <a href="javascript://">小芝麻</a>
+                                                <p>为什么一些演唱会是可以选座位的一些是不可以选座的！这个是怎么定的？？</p>
+                                            </dd>
+                                        </dl>
+                                        <em>15:07</em>
+                                    </div>
+                                    <div class="reply_message">
+                                        <div class="textaea">
+                                            <textarea style="font-size:12px;line-height:20px;height:120px;"></textarea>
+                                            <p>你还可以输入200个字符</p>
+                                        </div>
+                                        <div class="form-group" style="margin-left:70px;">
+                                            <button type="button" class="btn green" style="margin-right:10px;">发送</button>
+                                            <button type="button" class="btn">收起</button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="notif_div">
+                                        <dl>
+                                            <dt class="xitong"><img src="WebUI/images/luoke.png" /></dt>
+                                            <dd>
+                                                <a href="javascript://">小芝麻</a>
+                                                <p>为什么一些演唱会是可以选座位的一些是不可以选座的！这个是怎么定的？？</p>
+                                            </dd>
+                                        </dl>
+                                        <em>15:07</em>
+                                    </div>
+                                    <div class="reply_message">
+                                        <div class="textaea">
+                                            <textarea style="font-size:12px;line-height:20px;height:120px;"></textarea>
+                                            <p>你还可以输入200个字符</p>
+                                        </div>
+                                        <div class="form-group" style="margin-left:70px;">
+                                            <button type="button" class="btn green" style="margin-right:10px;">发送</button>
+                                            <button type="button" class="btn">收起</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--系统消息-->
+                <div style=" display:block; background-color:#fff;">
+                    <ul class="SystemMessage">
+                        <li class="ok">
+                            <p><b></b>帐号资质审核成功</p>
+                            <span>2015年06月10日</span>
+                            <i class="icon iconfont">&#xe607;</i>
+                            <div>
+                                你的机构帐号已于2015年6月5日完成螺壳认证的帐号资质审核，已开通所有相应的机构功能。这些功能可使用到2016年6月4日。
+                            </div>
+                        </li>
+                        <li>
+                            <p><b></b>帐号资质审核成功</p>
+                            <span>2015年06月10日</span>
+                            <i class="icon iconfont">&#xe607;</i>
+                        </li>
+                        <li>
+                            <p><b></b>帐号资质审核成功</p>
+                            <span>2015年06月10日</span>
+                            <i class="icon iconfont">&#xe607;</i>
+                        </li>
+                        <li>
+                            <p><b></b>帐号资质审核成功</p>
+                            <span>2015年06月10日</span>
+                            <i class="icon iconfont">&#xe607;</i>
+                        </li>
+                        <li>
+                            <p><b></b>帐号资质审核成功</p>
+                            <span>2015年06月10日</span>
+                            <i class="icon iconfont">&#xe607;</i>
+                        </li>
+                        <li>
+                            <p><b></b>帐号资质审核成功</p>
+                            <span>2015年06月10日</span>
+                            <i class="icon iconfont">&#xe607;</i>
+                        </li>
+                        <li>
+                            <p><b></b>帐号资质审核成功</p>
+                            <span>2015年06月10日</span>
+                            <i class="icon iconfont">&#xe607;</i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 添加成员 -->
+    <div id="addArena" style="display:none;">
+        <div class="layer-body addArena form-horizontal">
+            <h2 class="text-center">添加成员</h2>
+            <div class="bm_swtich_all">
+                <ul class="bm_swtich">
+                    <li class="e">站内邀请</li>
+                    <li>链接邀请</li>
+                </ul>
+                <i class="bm_swtich_line"></i>
+            </div>
+            <fieldset class="form-body" style="width:550px; margin:20px auto;">
+                <div class="form-group">
+                    <div class="controls">
+                        <input type="text" class="form-control col-md-6 inset" />
+                        <a href="javascript://" class="yaoqing">邀请</a>
+                    </div>
+                    <div class="controls">
+                        <h1>输入成员用户名或邮箱</h1>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/plugins/layer/layer.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <script>
+        $(function () {
+            //侧导航高度自适应
+            onscrolls2();
+
+            //活动管理处选项卡切换
+            $(".bm_swtich_all").each(function () {
+                var ths = $(this);
+                var tli = ths.find("li");
+                var tle = ths.find(".bm_swtich_line");
+                var tli_width = $(".bm_swtich li:first").width();
+                tle.width(tli_width);
+                tli.click(function () {
+                    var tw = $(this).width();
+                    tli.removeClass("e");
+                    $(this).addClass("e");
+                    tle.stop(true, true).animate({
+                        width: tw,
+                        left: $(this).position().left
+                    })
+                })
+            })
+        })
+    </script>
+</body>
+</html>

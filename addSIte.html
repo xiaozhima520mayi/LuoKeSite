@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>弹出层</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/plugins/layer/layer.js"></script>
+</head>
+<body>
+    <div class="layer-body addArena form-horizontal">
+        <h2 class="text-center">新建场馆</h2>
+        <fieldset class="form-body">
+            <div class="form-group">
+                <label class="control-label">场馆名称：</label>
+                <div class="controls">
+                    <input type="text" class="form-control col-md-4" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">机构地址：</label>
+                <div class="controls clearfix">
+                    <select class="form-control col-md-2">
+                        <option>省</option>
+                    </select>
+                    <select class="form-control col-md-2">
+                        <option>市</option>
+                    </select>
+                    <select class="form-control col-md-2">
+                        <option>区</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label"></label>
+                <div class="controls clearfix" id="container" style=" width:380px; height:284px;">
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <button type="button" class="btn green">保存</button>
+            </div>
+        </fieldset>
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=0tEpFu8DAKTlmEy3m0EtPZVlY4evGeml"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/MarkerTool/1.2/src/MarkerTool_min.js"></script>
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("container");
+        var point = new BMap.Point(121.473701, 31.230416);
+        map.centerAndZoom(point, 12);
+        map.enableScrollWheelZoom(true);
+        // var marker = new BMap.Marker(point);//创建标注
+        // 将标注添加到地图中
+        // marker.enableDragging();//可拖拽
+        //	marker.disableDragging();//不可拖拽
+        function myFun(result) {
+            var cityName = result.name;
+            map.setCenter(cityName);
+            map.addOverlay(marker);
+            //alert("当前定位城市:"+cityName);
+        }
+
+        //var myCity = new BMap.LocalCity();
+        //myCity.get(myFun);
+        //marker.addEventListener("dragend",positions);
+        //function positions(){
+        //var p=marker.getPosition();
+        //alert(p.lng);
+        //}
+
+    </script>
+</body>
+</html>

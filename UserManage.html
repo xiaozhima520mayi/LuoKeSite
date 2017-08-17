@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>机构用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutPublic.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <link href="WebUI/css/bootstarp.units.css" rel="stylesheet" />
+    <link href="WebUI/css/InstitutMessage.css" rel="stylesheet" />
+    <link href="WebUI/css/nemberManage.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="head">
+        <a href="javascript://"><img src="WebUI/images/logo.png" /></a>
+    </div>
+    <div class="content" id="content">
+        <div class="leftNav" id="leftNav">
+            <ul>
+                <li><a href="InstitutUserC.html">机构主页</a></li>
+                <li><a href="InstitutMessage.html">机构信息</a></li>
+                <li><a href="SiteManage.html">场地管理</a></li>
+                <li><a href="ActivityManage.html">活动管理</a></li>
+                <li><a href="MemberManage.html">成员管理</a></li>
+                <li><a href="VenueRental.html">场地出租</a></li>
+                <li class="current"><a href="UserManage.html">用户管理</a></li>
+                <li><a href="NotificatMessage.html">通知消息</a></li>
+                <li><a href="StateMessage.html">统计管理</a></li>
+                <li><a href="AuthorityMessage.html">权限管理</a></li>
+                <li><a href="Announcements.html">公告管理</a></li>
+                <li><a href="MaterialDesign.html">物料设计</a></li>
+                <li><a href="CulturalResources.html">文化资源</a></li>
+            </ul>
+        </div>
+        <div class="rightCont">
+            <div class="right_head">
+                <p>
+                    <a href="javascript://"><i class="icon iconfont">&#xe604;</i></a>
+                    <b></b>
+                    <a href="javascript://">注销</a>
+                </p>
+                机构用户中心
+            </div>
+            <div id="cnt">
+                <div class="jg_title">
+                    <a href="javascript://" onclick="addarena()" class="click-link">发送消息</a>
+                    <h1>用户管理</h1>
+                    <p>对关注本机构的用户发送消息</p>
+                </div>
+                <div class="memberList">
+                    <ul>
+                        <li>
+                            <p style="width:50%"><input type="checkbox" /><span></span><b>小芝麻</b></p>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://" class="mail"><i class="icon iconfont">&#xe604;</i></a>
+                        </li>
+                        <li>
+                            <p style="width:50%"><input type="checkbox" /><span></span><b>小芝麻</b></p>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://" class="mail"><i class="icon iconfont">&#xe604;</i></a>
+                        </li>
+                        <li>
+                            <p style="width:50%"><input type="checkbox" /><span></span><b>小芝麻</b></p>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://" class="mail"><i class="icon iconfont">&#xe604;</i></a>
+                        </li>
+                        <li>
+                            <p style="width:50%"><input type="checkbox" /><span></span><b>小芝麻</b></p>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://" class="mail"><i class="icon iconfont">&#xe604;</i></a>
+                        </li>
+                        <li>
+                            <p style="width:50%"><input type="checkbox" /><span></span><b>小芝麻</b></p>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://" class="mail"><i class="icon iconfont">&#xe604;</i></a>
+                        </li>
+                        <li>
+                            <p style="width:50%"><input type="checkbox" /><span></span><b>小芝麻</b></p>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://" class="mail"><i class="icon iconfont">&#xe604;</i></a>
+                        </li>
+                        <li>
+                            <p style="width:50%"><input type="checkbox" /><span></span><b>小芝麻</b></p>
+                            <em>MINIZHIMA@163.com</em>
+                            <a href="javascript://" class="mail"><i class="icon iconfont">&#xe604;</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 发送消息 -->
+    <div id="addArena" style="display:none;">
+        <div class="layer-body addArena form-horizontal">
+            <h2 class="text-center">发送消息</h2>
+            <fieldset class="form-body">
+                <div class="form-group">
+                    <label class="control-label">场馆名称：</label>
+                    <div class="controls">
+                        <input type="text" class="form-control col-md-5" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">机构地址：</label>
+                    <div class="controls">
+                        <textarea class="form-control col-md-5" style="height:170px;"></textarea>
+                    </div>
+                </div>
+                <div class="form-group text-center">
+                    <button type="button" class="btn green">发送</button>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/plugins/layer/layer.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <script>
+        var addarena = function (e) {
+            layer.open({
+                type: 1,
+                content: $("#addArena").html(),
+                title: false,
+                area: '650px'
+            })
+        };
+        var keep = $("#keep");
+        var save = $("#save");
+        var edit = $("#edit");
+        var onkeep = function () {
+            keep.hide();
+            save.show();
+            edit.show();
+        };
+        var onsave = function (s) {
+            var id = $(s).attr("data-ids");//获取指定场馆的id值
+            //提交保存数据的逻辑
+            console.log(id);
+            keep.show();
+            save.hide();
+            edit.hide();
+            off();
+        }
+        $(function () {
+            //侧导航高度自适应
+            onscrolls2();
+
+            //活动管理处选项卡切换
+            $(".bm_swtich_all").each(function () {
+                var ths = $(this);
+                var tli = ths.find("li");
+                var tle = ths.find(".bm_swtich_line");
+                var tli_width = $(".bm_swtich li:first").width();
+                tle.width(tli_width);
+                tli.click(function () {
+                    var tw = $(this).width();
+                    tli.removeClass("e");
+                    $(this).addClass("e");
+                    tle.stop(true, true).animate({
+                        width: tw,
+                        left: $(this).position().left
+                    })
+                })
+            })
+        })
+    </script>
+</body>
+</html>

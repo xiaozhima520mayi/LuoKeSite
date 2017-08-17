@@ -1,0 +1,34 @@
+﻿.announ { background-color: #fff; padding: 0 10px 10px; }
+.announ li { height: 50px; padding: 15px; border-bottom: #e4e4e4 1px dotted; }
+.announ li a { color: #333; font-size: 17px; font-weight: normal; line-height: 30px; }
+.announ li a:hover { color: #ae0c0c; }
+.announ li p { color: #aeaeae; font-size: 14px; line-height: 30px; }
+.layer-body { padding: 20px; background-color: #fff; }
+.control-label { font-size: 15px; }
+.time { position: relative; overflow: hidden; margin-bottom: 10px; }
+.time p { position: absolute; left: 5px; top: 6px; color: #d7d7d7; z-index: 99; }
+.controls input { margin-left: 0; }
+/**物料设计*/
+.mater li { position: relative; }
+.mater li i { position: absolute; right: 20px; top: 30px; font-style: normal; font-size: 14px; }
+.mater li i.finished { color: #66cccc; }
+.mater li i.ing { color: #ff6600; }
+.mater li i.beConfirmed { color: #ff6600; }
+.mater li i.revoke { color: #bcbcbc; }
+.materi .control-label { width: 90px; }
+.controls { position: relative; }
+.controls i { position: absolute; left: 200px; top: 6px; font-size: 17px; color: #aeaeae; }
+.bm_swtich_all { position: absolute; left: 15px; bottom: 0; }
+.bm_swtich { height: 32px; text-indent: 0;}
+.bm_swtich li { float: left; color: #797979; font-size: 14px; padding: 0 8px; line-height: 24px; margin-right: 8px; cursor: pointer; min-width: 54px; text-align: center;}
+.bm_swtich li.e { color: #da4f4a; }
+.bm_swtich_line { min-width: 55px; padding: 0 8px; border-bottom: #da4f4a 4px solid; position: absolute; left: 0; bottom: 0; }
+.star5{background:url(/WebUI/images/star.png) 0 0 no-repeat; height:20px}
+.star4{background:url(/WebUI/images/star.png) 0 -20px no-repeat; height:20px}
+.star3{background:url(/WebUI/images/star.png) 0 -40px no-repeat; height:20px}
+.star2{background:url(/WebUI/images/star.png) 0 -60px no-repeat; height:20px}
+.star1{background:url(/WebUI/images/star.png) 0 -80px no-repeat; height:20px}
+.star0{background:url(/WebUI/images/star.png) 0 -100px no-repeat; height:20px}
+.xq{ margin-top:5px; font-size:14px; line-height:20px;}
+.controls .hasConfirmed{ color:#66cc99}
+.controls .beConfirmed{ color:#ff6600}

@@ -1,0 +1,64 @@
+﻿.jg_title { position: relative; }
+.bm_swtich_all { position: absolute; left: 15px; bottom: 0; }
+.bm_swtich { height: 32px; text-indent: 0; }
+.bm_swtich li { float: left; color: #797979; font-size: 14px; padding: 0 8px; line-height: 24px; margin-right: 8px; cursor: pointer; min-width: 54px; text-align: center; }
+.bm_swtich li.e { color: #da4f4a;}
+.bm_swtich_line { min-width: 55px; padding: 0 8px; border-bottom: #da4f4a 4px solid; position: absolute;left:0;bottom: 0;}
+
+.notificat,.chatBox { margin:10px;}
+.history li{ min-height:60px;border:#ececec 1px solid;padding:10px;position:relative; margin-bottom:10px;}
+.history li dl{ width:70%;float:left}
+.history li dt{ float:left;width:60px;height:60px; overflow:hidden; border:#eee 1px solid; margin-right:10px;}
+.history li dt img{ width:100%;}
+.history li dd a{font-size:14px;color:#515151;line-height:24px;}
+.history li dd p{color:#999;font-size:14px;line-height:30px;}
+.history li b{font-size:14px;color:#ff6600;font-weight:normal;position:absolute; right:70px;top:10px; display:none;}
+.history li em{position:absolute; right:10px;top:10px;font-size:14px;color:#999;font-style:normal;}
+.history li i{float:right;font-size:22px;color:#999;margin-top:30px; margin-right:5px; cursor:pointer;}
+.reply_message{border-top:#ececec 1px solid;margin-top:10px; display:none;}
+.textaea{border:#ccc 1px solid;width:770px;margin:20px 0 20px 70px;}
+.textaea textarea{width:750px; background:none; border:none; padding:0 10px; color:#999;}
+.notif_div{ overflow:hidden;}
+.textaea p{border-top:#ccc 1px solid;height:28px; color:#bcbcbc; line-height:28px; font-size:14px; text-align:right; padding-right:10px;}
+.chatBox h2{ font-size:18px; line-height:40px; margin:15px 0 0;}
+.chatBox h2 i{ font-size:30px;padding-right:10px; color:#999;}
+.chatBox .reply_message{ border:none; margin:0;}
+.chatBox .textaea{ margin:10px 0 10px 10px;width:900px;}
+.chat_history{ margin-top:20px;}
+.chat_history h6{ font-size:14px;color:#333; line-height:40px;}
+.chat_history .history li dl{ width:90%;}
+.history li dt.xitong{ border:none;}
+.SystemMessage{margin:10px; overflow:hidden;border-top:#e4e4e5 1px solid;}
+.SystemMessage li{ min-height:20px;padding:10px 0; border-bottom:#e4e4e5 1px solid; position:relative;  cursor:default;}
+.SystemMessage li:hover{ background-color:#f9f9f9}
+.SystemMessage li p,.SystemMessage li span,.SystemMessage li i{line-height:20px; float:left; font-size:14px;color:#c9c9c9;}
+.SystemMessage li p{ width:78%;text-indent:35px}
+.SystemMessage li p b{ width:10px;height:10px;position:absolute; left:15px; top:15px; background-color:#c9c9c9; border-radius:10px; }
+.SystemMessage li.ok{cursor:pointer;}
+.SystemMessage li.ok p,.SystemMessage li.ok span,.SystemMessage li.ok i{color:#494949;}
+.SystemMessage li.ok p b{background-color:#ff3300}
+.SystemMessage li.ok i{ color:#797979}
+.SystemMessage li span{ width:17%;}
+.SystemMessage li i{width:5%;text-align:center;font-size:20px;color:#d7d7d6;}
+.SystemMessage li div{line-height:28px;margin-left:35px;font-size:14px;margin-top:5px;}
+/*统计管理表格统计图*/
+.charts_title{ height:35px; margin:10px;}
+.charts_title li{padding:0 20px;font-size:13px;float:left;background-color:#e4e4e5;background-color:rgba(249, 249, 249, 1);line-height:35px;border:#e4e4e5 1px solid; cursor:pointer;}
+.charts_title li.one{border-radius:4px 0 0 4px;border-right:none;}
+.charts_title li.two{border-radius:0 4px 4px 0;border-left:none;}
+.charts_title li.e{background-color:#525a67;color:#fff;border-color:#525a67;}
+.chartsBox{border:#e4e4e5 1px solid; margin:20px 10px;}
+.cbtitle{height:35px; background-color:#f5f5f5; border-bottom:#e4e4e5 1px solid;}
+.cbtitle span{padding:0 20px;line-height:35px;font-size:14px;border-right:#e4e4e5 1px solid; display:inline-block; height:35px;}
+.chart_content{ min-height:310px;}
+.chart_content .chartTable td{ font-size:13px; line-height:40px; vertical-align:middle; border-bottom:#e4e4e5 1px solid; text-indent:20px;}
+.memberList li{ padding:20px;border-bottom:#eaeaea 1px dotted; overflow:hidden;}
+.memberList li p{width:25%;}
+.memberList li p,.memberList li i,.memberList li em,.memberList li a{ float:left;overflow:hidden;}
+.memberList li a{float:right;}
+.memberList li p input{ float:left; margin-top:25px;margin-right:10px;}
+.memberList li p span{ width:60px; height:60px; border:#eee 1px solid;border-radius:4px; overflow:hidden;float:left; background-color:#eee;}
+.memberList li p b{float:left;font-weight:normal;margin-left:10px;font-size:14px;color:#515151; line-height:60px;}
+.memberList li i{width:30%;font-style:normal;line-height:60px;font-size:14px;color:#bcbcbc;}
+.memberList li em{width:45%;font-style:normal;line-height:60px;font-size:14px;color:#515151;}
+.memberList li em span{ margin-right:30px; font-size:14px;}

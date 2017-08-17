@@ -1,0 +1,8 @@
+﻿.apply{ margin:0 10px;}
+.apply li { padding: 10px 10px 15px; border-bottom: #e4e4e4 1px dotted; }
+.apply li a { color: #515151; font-size: 20px; line-height: 35px; }
+.apply li a:hover { color: #da4f4a; }
+.apply li span { color: #999; font-size: 14px; line-height: 28px; margin-right:10px; }
+.apply li div { font-size: 14px; line-height: 22px; color: #a1a1a1; }
+.file_upload{width:350px;height:180px;border:#999 1px dashed;background-color:#fff; position:relative;}
+.file_upload span{position:absolute;left:0;top:0;text-align:center;line-height:180px;width:100%; color:#bcbcbc;}

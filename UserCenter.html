@@ -1,0 +1,1333 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户中心</title>
+    <link href="WebUI/css/base.css" rel="stylesheet" />
+    <link href="WebUI/css/UserCenter.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="WebUI/font/iconfont.css" rel="stylesheet" />
+    <!--日历-->
+    <link href="WebUI/plugins/rili/rili.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="top">
+        <div class="top_right">
+            <a href="javascript://">机构平台</a>
+            <span>|</span>
+            <a href="javascript://"><i class="icon iconfont">&#xe600;</i>导航</a>
+        </div>
+        <div class="top_left">欢迎你，小芝麻<a href="javascript://">退出</a></div>
+    </div>
+    <div class="head_mid">
+        <div class="head_main">
+            <div class="logo">
+                用户中心<a href="javascript://">返回平台首页</a>
+            </div>
+            <ul>
+                <li><a href="UserCenter.html">首页</a></li>
+                <li><a href="PersonalSettings.html">个人设置</a></li>
+                <li><a href="javascript://">消息</a></li>
+                <li><a href="javascript://">学习社区</a></li>
+            </ul>
+            <div class="search">
+                <!--输入时候改变字体颜色给input加“fontColor”-->
+                <input type="text" value="输入检索词" />
+                <i class="icon iconfont">&#xe603;</i>
+            </div>
+            <div class="fclear"></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <div class="user">
+                <h1><img src="WebUI/images/user.gif" /></h1>
+                <div>
+                    <h2>小芝麻小芝麻小芝麻</h2>
+                    <p>ID：23986</p>
+                    <p>积分：12</p>
+                </div>
+            </div>
+            <ul class="sideNav">
+                <li class="e">个人中心</li>
+                <li>我的报名</li>
+                <li>我的关注</li>
+                <li>我的评论</li>
+                <li>我的收藏</li>
+                <li>我的积分</li>
+                <li>我的申请</li>
+                <li>我的机构</li>
+                <li>我的筹办</li>
+            </ul>
+        </div>
+        <div class="right">
+            <!--个人中心-->
+            <div id="grzx" class="uc" style="display:block">
+                <div class="my_baoming">
+                    <div class="bm_head">
+                        <a href="javascript://">更多</a>
+                        <h1 class="title">我的报名</h1>
+                    </div>
+                    <ul class="bm_list">
+                        <li>
+                            <a href="javascript://">百家讲坛-笑谈三国</a>
+                            <p>
+                                <span>绍兴图书馆二号楼报告厅</span>
+                                <span>时间：2015年12月4号  9：00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript://">百家讲坛-笑谈三国</a>
+                            <p>
+                                <span>绍兴图书馆二号楼报告厅</span>
+                                <span>时间：2015年12月4号  9：00</span>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="javascript://">百家讲坛-笑谈三国</a>
+                            <p>
+                                <span>绍兴图书馆二号楼报告厅</span>
+                                <span>时间：2015年12月4号  9：00</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calendar">
+                    <div class="rili_switch">
+                        <p title="上一月份" onclick="JCalendar.update(-1);return false" class="prev"><i class="icon iconfont">&#xe601;</i></p>
+                        <p class="day">今天</p>
+                        <p title="下一月份" onclick="JCalendar.update(1);return false" class="next"><i class="icon iconfont">&#xe602;</i></p>
+                    </div>
+                    <h1 class="title">活动日历</h1>
+                    <div  id="calendar_contain">
+                        
+                    </div>
+                    <div class="dashiji" id="rili_info">
+                    </div>
+                </div>
+                <div class="fclear"></div>
+                <div class="my_like">
+                    <h1 class="title">猜你喜欢</h1>
+                    <ul class="like_prolist">
+                        <li>
+                            <a href="javascript://" class="imgs"><img src="WebUI/images/like1.jpg" /></a>
+                            <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                        </li>
+                        <li>
+                            <a href="javascript://" class="imgs"><img src="WebUI/images/like2.jpg" /></a>
+                            <div><a href="javascript://">《敦煌：生灵的歌》《敦煌：生灵的歌》《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                        </li>
+                        <li>
+                            <a href="javascript://" class="imgs"><img src="WebUI/images/like3.jpg" /></a>
+                            <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                        </li>
+                        <li>
+                            <a href="javascript://" class="imgs"><img src="WebUI/images/like4.jpg" /></a>
+                            <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                        </li>
+                        <li>
+                            <a href="javascript://" class="imgs"><img src="WebUI/images/like5.jpg" /></a>
+                            <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="follow_dynamic">
+                    <h1 class="title">关注动态</h1>
+                    <ul class="dynamic">
+                        <li>
+                            <h6>5日</h6>
+                            <dl>
+                                <dt><img src="WebUI/images/user1.png" /></dt>
+                                <dd>
+                                    <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                    <p class="cont">该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, 七项托尼奖。该剧获得超过50个的主要戏剧奖项该剧获得超过50个的主要戏剧奖项该剧获得超过50个的主要戏剧奖项</p>
+                                    <p>
+                                        场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                    </p>
+                                    <p>时间：2016-01-02 13：00-15：00</p>
+                                    <p>
+                                        状态：<b>正在报名</b>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h6>4日</h6>
+                            <dl>
+                                <dt><img src="WebUI/images/user1.png" /></dt>
+                                <dd>
+                                    <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                    <p class="cont">该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, 七项托尼奖。该剧获得超过50个的主要戏剧奖项该剧获得超过50个的主要戏剧奖项该剧获得超过50个的主要戏剧奖项</p>
+                                    <p>
+                                        场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                    </p>
+                                    <p>时间：2016-01-02 13：00-15：00</p>
+                                    <p>
+                                        状态：<b>正在报名</b>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--我的报名-->
+            <div id="wdbm" class="uc" style=" display:none;">
+                <div class="bm_content width_740 fright">
+                    <h1 class="title">我的报名</h1>
+                    <div class="bm_swtich_all">
+                        <ul class="bm_swtich">
+                            <li class="e">即将运行</li>
+                            <li>往期报名</li>
+                        </ul>
+                        <i class="bm_swtich_line"></i>
+                    </div>
+                    <div class="all_bm_cont">
+                        <ul class="bm_list_cont" style="display:block;">
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like2.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like3.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like4.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/bm1.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/bm1.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/bm1.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="bm_list_cont">
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like2.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like3.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like4.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/bm1.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/bm1.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/bm1.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>绍兴图书馆二号楼报告厅</p>
+                                        <p>时间：<b>2016-01-02 13：00-15：00</b></p>
+                                        <p>6排23座 7排10座</p>
+                                        <p>手机号：13498643453</p>
+                                    </dd>
+                                </dl>
+                                <div class="QRCode">
+                                    <p>14676864</p>
+                                    <img src="WebUI/images/QRcord.jpg" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--我的关注-->
+            <div id="wdgz" class="uc" style=" display:none;">
+                <div class="width_780 fright">
+                    <div class="bm_content">
+                        <h1 class="title">我的关注</h1>
+                    </div>
+                    <ul class="guanzhu_list marginTop10">
+                        <li>
+                            <dl>
+                                <dt><img src="WebUI/images/user1.png" /></dt>
+                                <dd>
+                                    <p>关注：132546</p>
+                                    <a href="javascript://">取消关注</a>
+                                </dd>
+                            </dl>
+                            <ul class="like_prolist">
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like1.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like2.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》《敦煌：生灵的歌》《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like3.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like4.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like5.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src="WebUI/images/user1.png" /></dt>
+                                <dd>
+                                    <p>关注：132546</p>
+                                    <a href="javascript://">取消关注</a>
+                                </dd>
+                            </dl>
+                            <ul class="like_prolist">
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like1.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like2.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》《敦煌：生灵的歌》《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like3.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like4.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like5.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src="WebUI/images/user1.png" /></dt>
+                                <dd>
+                                    <p>关注：132546</p>
+                                    <a href="javascript://">取消关注</a>
+                                </dd>
+                            </dl>
+                            <ul class="like_prolist">
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like1.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like2.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》《敦煌：生灵的歌》《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like3.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like4.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                                <li>
+                                    <a href="javascript://" class="imgs"><img src="WebUI/images/like5.jpg" /></a>
+                                    <div><a href="javascript://">《敦煌：生灵的歌》</a><span>2016-02-14</span></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--我的评论-->
+            <div id="wdpl" class="uc" style=" display:none">
+                <div class="bm_content width_740 fright">
+                    <h1 class="title">我的评论</h1>
+                    <ul class="dynamic reviews">
+                        <li>
+                            <dl>
+                                <dt><a href="javascript://"><img src="WebUI/images/bm2.jpg" /></a></dt>
+                                <dd>
+                                    <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                    <p class="cont">该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, </p>
+                                    <p>
+                                        场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                    </p>
+                                    <p>时间：2016-01-02 13：00-15：00</p>
+                                    <p>
+                                        状态：<b>正在报名</b>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <div class="open_revies" style="display:none">展开评论</div>
+                            <div class="reviews_list">
+                                <div class="rev_div">
+                                    <div class="me">
+                                        <h6><img src="WebUI/images/user.gif" /></h6>
+                                        <div class="rev_text">
+                                            <a href="javascript://">小芝麻</a>
+                                            <p>该如何预约报告厅</p>
+                                        </div>
+                                        <span>2016年02月19日 13:00</span>
+                                    </div>
+                                    <div class="admin">
+                                        <h6><img src="WebUI/images/user.gif" /></h6>
+                                        <div class="rev_text">
+                                            <a href="javascript://">管理员</a>
+                                            <p>感谢你的参与，欢迎下次再来</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="javascript://"><img src="WebUI/images/bm2.jpg" /></a></dt>
+                                <dd>
+                                    <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                    <p class="cont">该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, </p>
+                                    <p>
+                                        场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                    </p>
+                                    <p>时间：2016-01-02 13：00-15：00</p>
+                                    <p>
+                                        状态：<b>正在报名</b>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <div class="open_revies" style="display:block">展开评论</div>
+                            <div class="reviews_list" style="display:none">
+                                <div class="rev_div">
+                                    <div class="me">
+                                        <h6><img src="WebUI/images/user.gif" /></h6>
+                                        <div class="rev_text">
+                                            <a href="javascript://">小芝麻</a>
+                                            <p>该如何预约报告厅</p>
+                                        </div>
+                                        <span>2016年02月19日 13:00</span>
+                                    </div>
+                                    <div class="admin">
+                                        <h6><img src="WebUI/images/user.gif" /></h6>
+                                        <div class="rev_text">
+                                            <a href="javascript://">管理员</a>
+                                            <p>感谢你的参与，欢迎下次再来</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="javascript://"><img src="WebUI/images/bm2.jpg" /></a></dt>
+                                <dd>
+                                    <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                    <p class="cont">该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, </p>
+                                    <p>
+                                        场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                    </p>
+                                    <p>时间：2016-01-02 13：00-15：00</p>
+                                    <p>
+                                        状态：<b>正在报名</b>
+                                    </p>
+                                </dd>
+                            </dl>
+                            <div class="open_revies" style="display:block">展开评论</div>
+                            <div class="reviews_list" style="display:none">
+                                <div class="rev_div">
+                                    <div class="me">
+                                        <h6><img src="WebUI/images/user.gif" /></h6>
+                                        <div class="rev_text">
+                                            <a href="javascript://">小芝麻</a>
+                                            <p>该如何预约报告厅</p>
+                                        </div>
+                                        <span>2016年02月19日 13:00</span>
+                                    </div>
+                                    <div class="admin">
+                                        <h6><img src="WebUI/images/user.gif" /></h6>
+                                        <div class="rev_text">
+                                            <a href="javascript://">管理员</a>
+                                            <p>感谢你的参与，欢迎下次再来</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--我的收藏-->
+            <div id="mdsc" class="uc" style="display: none">
+                <div class="bm_content width_740 fright">
+                    <h1 class="title">我的收藏</h1>
+                    <div class="bm_swtich_all">
+                        <ul class="bm_swtich">
+                            <li class="e">活动</li>
+                            <li>场地</li>
+                        </ul>
+                        <i class="bm_swtich_line"></i>
+                    </div>
+                    <ul class="dynamic reviews noborder">
+                        <li>
+                            <dl>
+                                <dt><a href="javascript://"><img src="WebUI/images/bmimg.jpg" /></a></dt>
+                                <dd>
+                                    <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                    <p class="cont">该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, </p>
+                                    <p>
+                                        场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                    </p>
+                                    <p>时间：2016-01-02 13：00-15：00</p>
+                                    <p>
+                                        状态：<b>正在报名</b>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="javascript://"><img src="WebUI/images/bmimg.jpg" /></a></dt>
+                                <dd>
+                                    <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                    <p class="cont">该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, </p>
+                                    <p>
+                                        场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                    </p>
+                                    <p>时间：2016-01-02 13：00-15：00</p>
+                                    <p>
+                                        状态：<b>正在报名</b>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="javascript://"><img src="WebUI/images/bm2.jpg" /></a></dt>
+                                <dd>
+                                    <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                    <p class="cont">该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, </p>
+                                    <p>
+                                        场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                    </p>
+                                    <p>时间：2016-01-02 13：00-15：00</p>
+                                    <p>
+                                        状态：<b>正在报名</b>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><a href="javascript://"><img src="WebUI/images/bm2.jpg" /></a></dt>
+                                <dd>
+                                    <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                    <p class="cont">该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, </p>
+                                    <p>
+                                        场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                    </p>
+                                    <p>时间：2016-01-02 13：00-15：00</p>
+                                    <p>
+                                        状态：<b>正在报名</b>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--我的积分-->
+            <div id="wdjf" class="uc" style="display:none">
+                <div class="bm_content width_740 fright">
+                    <h1 class="title">我的积分</h1>
+                    <div class="bm_swtich_all">
+                        <ul class="bm_swtich">
+                            <li class="e">全部</li>
+                            <li>收入</li>
+                            <li>支出</li>
+                        </ul>
+                        <i class="bm_swtich_line"></i>
+                    </div>
+                    <div class="all_points">
+                        <div class="points" style="display:block">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th style="width:25%">日期</th>
+                                        <th style="width:25%">收入/支出</th>
+                                        <th style="width:50%">说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="points">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th style="width:25%">日期</th>
+                                        <th style="width:25%">收入/支出</th>
+                                        <th style="width:50%">说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="points">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th style="width:25%">日期</th>
+                                        <th style="width:25%">收入/支出</th>
+                                        <th style="width:50%">说明</th>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="green">+34</td>
+                                        <td>活动报名花费积分</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-02-19</td>
+                                        <td class="red">-200</td>
+                                        <td>每日签到</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--我的申请-->
+            <div id="wdsq" class="uc" style="display: none">
+                <div class="bm_content width_740 fright">
+                    <h1 class="title">我的申请</h1>
+                    <div class="bm_swtich_all">
+                        <ul class="bm_swtich">
+                            <li class="e">文化资源</li>
+                            <li>场地</li>
+                        </ul>
+                        <i class="bm_swtich_line"></i>
+                    </div>
+                    <div class="apply">
+                        <ul>
+                            <li>
+                                <a href="javascript://">申请对象：舌尖上的困惑-食品添加剂</a>
+                                <p>
+                                    <span>状态：<b>未确认</b></span>
+                                    <span>时间：2016-01-15</span>
+                                    <span>类型：文艺演出</span>
+                                    <span>费用：2000/场</span>
+                                </p>
+                                <div>田耘社自2004年成立至今，凭借着对传统文化的满腔热忱，秉持着孜孜不倦、精益求精的执着精神。田耘社在上海这座时尚、潮流、发达的现代化都市里，勇于探索、甘于寂寞、持之以恒、辛勤耕耘，用笑声和掌声追逐梦想。</div>
+                            </li>
+                            <li>
+                                <a href="javascript://">申请对象：舌尖上的困惑-食品添加剂</a>
+                                <p>
+                                    <span>状态：<b>未确认</b></span>
+                                    <span>时间：2016-01-15</span>
+                                    <span>类型：文艺演出</span>
+                                    <span>费用：2000/场</span>
+                                </p>
+                                <div>田耘社自2004年成立至今，凭借着对传统文化的满腔热忱，秉持着孜孜不倦、精益求精的执着精神。田耘社在上海这座时尚、潮流、发达的现代化都市里，勇于探索、甘于寂寞、持之以恒、辛勤耕耘，用笑声和掌声追逐梦想。</div>
+                            </li>
+                            <li>
+                                <a href="javascript://">申请对象：舌尖上的困惑-食品添加剂</a>
+                                <p>
+                                    <span>状态：<b>未确认</b></span>
+                                    <span>时间：2016-01-15</span>
+                                    <span>类型：文艺演出</span>
+                                    <span>费用：2000/场</span>
+                                </p>
+                                <div>田耘社自2004年成立至今，凭借着对传统文化的满腔热忱，秉持着孜孜不倦、精益求精的执着精神。田耘社在上海这座时尚、潮流、发达的现代化都市里，勇于探索、甘于寂寞、持之以恒、辛勤耕耘，用笑声和掌声追逐梦想。</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--我的机构-->
+            <div id="wdjg" class="uc" style=" display:none;">
+                <div class="width_780 fright">
+                    <div class="bm_content">
+                        <h1 class="title">我的机构</h1>
+                    </div>
+                    <ul class="guanzhu_list jigou marginTop10">
+                        <li>
+                            <dl>
+                                <dt><img src="WebUI/images/user1.png" /></dt>
+                                <dd><h6><a href="javascript://">上海图书馆</a></h6></dd>
+                            </dl>
+                            <div class="member">
+                                <span>成员：</span>
+                                <ul>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src="WebUI/images/user1.png" /></dt>
+                                <dd><h6><a href="javascript://">上海图书馆</a></h6></dd>
+                            </dl>
+                            <div class="member">
+                                <span>成员：</span>
+                                <ul>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src="WebUI/images/user1.png" /></dt>
+                                <dd><h6><a href="javascript://">上海图书馆</a></h6></dd>
+                            </dl>
+                            <div class="member">
+                                <span>成员：</span>
+                                <ul>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                    <li><a href="javascript://"><img src="WebUI/images/user.gif" /></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+            <!--我的筹办-->
+            <div id="wdcb" class="uc" style=" display:none;">
+                <div class="bm_content width_740 fright">
+                    <h1 class="title">我的筹办</h1>
+                    <div class="bm_swtich_all">
+                        <ul class="bm_swtich">
+                            <li class="e">正在运行</li>
+                            <li>已结束</li>
+                        </ul>
+                        <i class="bm_swtich_line"></i>
+                    </div>
+                    <div class="all_bm_cont">
+                        <ul class="bm_list_cont radius" style="display:block;">
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like2.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,  </p>
+                                        <p>
+                                            场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                        </p>
+                                        <p>时间：2016-01-02 13：00-15：00</p>
+                                        <p>
+                                            状态：<b>正在报名</b>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <div class="promotion">
+                                    <h4>已报名<a href="javascript://">详细</a></h4>
+                                    <h1>400人</h1>
+                                    <span>最大500人，300人成团</span>
+                                    <div class="progress_bar">
+                                        <div class="progress_in" style="width:50%"></div>
+                                    </div>
+                                </div>
+                                <p class="chouban">筹办中</p>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like2.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,  </p>
+                                        <p>
+                                            场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                        </p>
+                                        <p>时间：2016-01-02 13：00-15：00</p>
+                                        <p>
+                                            状态：<b>正在报名</b>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <div class="promotion">
+                                    <h4>已报名<a href="javascript://">详细</a></h4>
+                                    <h1>400人</h1>
+                                    <span>最大500人，300人成团</span>
+                                    <div class="progress_bar">
+                                        <div class="progress_in" style="width:50%"></div>
+                                    </div>
+                                </div>
+                                <p class="chouban">成功</p>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like2.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,  </p>
+                                        <p>
+                                            场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                        </p>
+                                        <p>时间：2016-01-02 13：00-15：00</p>
+                                        <p>
+                                            状态：<b>正在报名</b>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <div class="promotion">
+                                    <h4>已报名<a href="javascript://">详细</a></h4>
+                                    <h1>400人</h1>
+                                    <span>最大500人，300人成团</span>
+                                    <div class="progress_bar">
+                                        <div class="progress_in" style="width:50%"></div>
+                                    </div>
+                                </div>
+                                <p class="chouban">筹办中</p>
+                            </li>
+                        </ul>
+                        <ul class="bm_list_cont radius">
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like2.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, 该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖, </p>
+                                        <p>
+                                            场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                        </p>
+                                        <p>时间：2016-01-02 13：00-15：00</p>
+                                        <p>
+                                            状态：<b>正在报名</b>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <div class="promotion">
+                                    <h4>已报名<a href="javascript://">详细</a></h4>
+                                    <h1>400人</h1>
+                                    <span>最大500人，300人成团</span>
+                                    <div class="progress_bar">
+                                        <div class="progress_in" style="width:50%"></div>
+                                    </div>
+                                </div>
+                                <p class="chouban">筹办中</p>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like2.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,  </p>
+                                        <p>
+                                            场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                        </p>
+                                        <p>时间：2016-01-02 13：00-15：00</p>
+                                        <p>
+                                            状态：<b>正在报名</b>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <div class="promotion">
+                                    <h4>已报名<a href="javascript://">详细</a></h4>
+                                    <h1>400人</h1>
+                                    <span>最大500人，300人成团</span>
+                                    <div class="progress_bar">
+                                        <div class="progress_in" style="width:50%"></div>
+                                    </div>
+                                </div>
+                                <p class="chouban">筹办中</p>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript://"><img src="WebUI/images/like2.jpg" /></a></dt>
+                                    <dd>
+                                        <a href="javascript://">韦伯经典原版音乐剧《剧院魅影》</a>
+                                        <p>该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,该剧获得超过50个的主要戏剧奖项，包括三项奥立弗奖,  </p>
+                                        <p>
+                                            场地：<i>绍兴图书馆镜湖新馆 2F 报考厅</i>
+                                        </p>
+                                        <p>时间：2016-01-02 13：00-15：00</p>
+                                        <p>
+                                            状态：<b>正在报名</b>
+                                        </p>
+                                    </dd>
+                                </dl>
+                                <div class="promotion">
+                                    <h4>已报名<a href="javascript://">详细</a></h4>
+                                    <h1>400人</h1>
+                                    <span>最大500人，300人成团</span>
+                                    <div class="progress_bar">
+                                        <div class="progress_in" style="width:50%"></div>
+                                    </div>
+                                </div>
+                                <p class="chouban">筹办中</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--js引用-->
+    <script src="WebUI/js/jquery-1.9.1.min.js"></script>
+    <script src="WebUI/js/animate.js"></script>
+    <script>
+        var rili_json = { "nowdate": "2015-11-13", "showdate": "2015-11-14", "list": [{ "theyear": "2015", "data": [{ "themonth": "09", "item": [{ "thedate": "30", "url": "http://mobile.it168.com/a2015/0928/1765/000001765793.shtml", "imgurl": "http://image4.it168.com/2015/10/30/b5573d3d-172d-43f4-afbe-8ccaa0c78f98.jpg", "title": "谷歌30日发布新机＋新系统", "info": "谷歌将于太平洋时间9月29日早上9点(北京时间9月30日零点)于旧金山召开2015年度新品发布会，届时两款Nexus手机、最终版“棉花糖”Android系统" }] }, { "themonth": "10", "item": [{ "thedate": "06", "url": "http://mobile.it168.com/a2015/0915/1762/000001762076.shtml", "imgurl": "http://image4.it168.com/2015/10/30/17169dd0-df3d-4113-8a4c-a3612769e2bf.jpg", "title": "微软10月6日发布Lumia 950", "info": "微软已经正式向媒体发出邀请函，宣布于今年10月6日在纽约召开新品发布会，推出一系列Win 10系统硬件产品。最有可能将是微软Lumia 950、Lumia 950XL以及平板电脑Surface Pro 4，预计还有全新智能手环同步登场。" }, { "thedate": "11", "url": "http://mobile.it168.com/a2015/0925/1765/000001765470.shtml", "imgurl": "http://image4.it168.com/2015/10/30/1c27cdf5-f4ad-4534-86b9-e30e116dff1d.jpg", "title": "扣人心弦 中兴AXON天机新品", "info": "中兴“AXON天机”旗舰系列战略发布会的实体邀请函，该邀请函为长方体纯黑盒体，盒盖正面以烫金字呈现本次中兴发布会的品牌主题“用心·不凡”。10月11日，深圳·京基100 瑞吉酒店五楼。猜测此次发布会的主角可能是即将发布的AXON天机Mini。" }, { "thedate": "13", "url": "http://dc.it168.com/tu/1768354_1.shtml", "imgurl": "http://image4.it168.com/2015/10/30/bd99f965-3aeb-4926-8708-a8f341702fe1.jpg", "title": "三剑齐发！佳能三款新机现场体验", "info": "佳能在2015年10月13日正式发布了三款新机，分别是定位入门的微单EOS M10、一英寸大底定位专业便携G5X和主打小巧时尚随身携带的G9X。在下午的佳能发布会上，我们已经率先体验了这三款新机，下面来看小编的现场体验简评吧。" }, { "thedate": "14", "url": "http://mobile.it168.com/tu/1767819_1.shtml#1", "imgurl": "http://image4.it168.com/2015/10/30/f689d424-4cab-4a87-9ba2-28ae34c23023.jpg", "title": "手机拍照讲堂第二课：寂寞旅途", "info": "一个面包，一盏台灯，还有一个小纸人，再加上一台手机简单的几样道具就能打造一个属于自己的影像故事，当然这里还得得益于三星Galaxy S6 edge+强大的专业模式才能拍出如此干净有趣的画面。" }, { "thedate": "19", "url": "http://digital.it168.com/tu/1770746_1.shtml", "imgurl": "http://image4.it168.com/2015/10/30/9e47c4ba-d85a-4b12-bdb9-c951fb8cf618.jpg", "title": "1999元大玩具 小米九号平衡车发布", "info": "前两天，酝酿许久后，新品“九号平衡车”跟着小米电视3发布的浪潮也出现在了大众的眼光之中，售价1999元，我们来看下它的表现吧。" }, { "thedate": "19", "url": "http://elec.it168.com/a2015/1019/1769/000001769583.shtml", "imgurl": "http://image4.it168.com/2015/10/30/c08b4ed0-65d6-48c2-b7e6-a1e7621f2770.jpg", "title": "60寸分体设计 小米电视3发布", "info": "10.19日小米召开新品发布会，会前虚晃一枪在所有人都以为是相机的时候，雷军突然发微博声明其实我们要发的是小米电视3哟~" }, { "thedate": "20", "url": "http://mobile.it168.com/a2015/1014/1768/000001768479.shtml", "imgurl": "http://image4.it168.com/2015/10/30/10611067-06a9-418a-8cbb-6d6d8ab83175.jpg", "title": "OPPO R7S国内于10月20日发布", "info": "OPPO R7系列双机——R7和R7 Plus都时隔5个月后，R7宣布准备与大家见面，而从日前工信部曝光的身份认证信息来看，它更像是对于家族产品线的补充而非取代升级。" }, { "thedate": "21", "url": "http://mobile.it168.com/tu/1768101_1.shtml#3", "imgurl": "http://image4.it168.com/2015/10/30/5125cf47-c9f3-4f0c-82bb-1da6a5c74ee4.jpg", "title": "又来全金属 魅蓝新品21日发布", "info": "魅族昨天放出了将会举行发布会的消息，并且邀请邓紫棋作为发布会的嘉宾，今天早上我们已经收到了魅族发布会的邀请函，魅族将会在10月21日于北京国家会议中心举行新品发布会，这款新品命名为“魅蓝metal”，采用金属后盖设计。" }, { "thedate": "22", "url": "http://sacc.it168.com", "imgurl": "http://image4.it168.com/2015/10/30/cf0dd564-3a5c-4450-ad32-cf8ba22969ad.png", "title": "互联网+架构师盛宴：SACC2015再创新高", "info": "2015第七届中国系统架构师大会，10月22日-24日在北京新云南皇冠假日酒店顺利举行，本次大会以“互联网+重塑IT架构”为主题，站在互联网+的风口上，诚邀百余名演讲嘉宾，打造一场架构师腾飞的技术盛会。参展和合作企业28家，图书出版社5家；大会购票及赠票用户达到2700多人，现场参会人数达2500人。" }, { "thedate": "23", "url": "http://mobile.it168.com/a2015/1012/1767/000001767877.shtml", "imgurl": "http://image4.it168.com/2015/10/30/5a6c0f60-3588-4b12-a9e5-d2cfcb38c076.jpg", "title": "Gigaset ME本月23日国内发布", "info": "前不久，德国通信品牌Gigaset于IFA发布智能手机ME系列-ME,ME pro,ME pure三款新品，三款手机同属ME系列。源自德国品质的智能手机厂商将10月23日在北京召开“品 德之美 Gigaset智能手机品鉴会。本次将会亮相ME系当中主推的Gigaset ME。" }, { "thedate": "27", "url": "http://mobile.it168.com/a2015/1023/1770/000001770961.shtml", "imgurl": "http://image4.it168.com/2015/10/30/b66d7b44-1c36-4f8e-8117-5cd421c273bf.jpg", "title": "进化2 乐视手机2代27日发布", "info": "这次的邀请函主打“进化2”主题，白色的盒子中竟然装着一枚鱼类化石，这枚化石在右上角印有“进化2”主题，底部有乐视logo。而发布会将于10月27日下午2:30在万事达中心举办，我们也将第一时间亲临现场，解读进化的秘密。" }, { "thedate": "29", "url": "http://mobile.it168.com/a2015/1021/1770/000001770274.shtml", "imgurl": "http://image4.it168.com/2015/10/30/935e0303-fb4b-4402-891e-1f8d091725a1.png", "title": "同心环 一加手机新品29日发布", "info": "一加官方将会在10月29日举办发布会，正式推出一加手机X，并在全球6个城市16：30同时发布(北京、伦敦、纽约、旧金山、新德里、雅加达)。据称将于“双十一”正式开卖。" }, { "thedate": "29", "url": "http://mobile.it168.com/a2015/1012/1767/000001767919.shtml", "imgurl": "http://image4.it168.com/2015/10/30/59d96ea7-e3fe-4498-b33f-7bed195d2848.jpg", "title": "或4699 索尼Z5系列29日发布", "info": "索尼Z5系列新品即将于中国大陆发布，不过与前几代产品一样登陆国内的仍然没有迷你款Z5 Compact。目前有消息爆料称售价将为4699元/5499元，索粉们又可以充值信仰了。" }, { "thedate": "30", "url": "http://mp.weixin.qq.com/s?__biz=MjM5NjU1MzM1Mw==&mid=401345538&idx=1&sn=14424f862f81e38f92e305548639e7a6#wechat_redirect", "imgurl": "http://image4.it168.com/2015/10/29/94f0d49a-3a81-45a7-9275-6aba96662ac4.jpg", "title": "拍照要修图 听听修图创始人怎么说？", "info": "本期沙龙邀请到泼辣修图创始人——王博睿，北京时间21点整，让远在美国、时差12小时的他来告诉你，怎样才能修出独特风格的图片，让你从此正式告别X图秀秀。" }] }, { "themonth": "11", "item": [{ "thedate": "02", "url": "http://weibo.com/3771196911/D1cWEiqdC?from=page_1006063771196911_profile&wvr=6&mod=weibotime&type=comment#_rnd1446185146566", "imgurl": "http://image4.it168.com/2015/10/30/35f34593-a057-48b2-a396-c03194041bcc.jpg", "title": "酷开旗舰新品发布会", "info": "11月2日酷开要发布新品电视，据说将会是一款定位轻奢一族,倡导“轻奢华，新时尚”的生活理念产品。" }, { "thedate": "07", "url": "http://notebook.it168.com/a2015/1107/1775/000001775459.shtml", "imgurl": "http://image4.it168.com/2015/11/11/39ac276e-de17-4731-a1ef-960315d174f4.jpg", "title": "LOL妹子杯成都火爆开战", "info": "11月7日下午由IT168主办，雷神总冠名的2015妹子杯LOL大赛大成都赛区32强线下赛正式开赛了!现场妹子络绎不绝，一起随小编来看看吧。" }, { "thedate": "08", "url": "http://notebook.it168.com/a2015/1108/1775/000001775505.shtml", "imgurl": "http://image4.it168.com/2015/11/11/d69a213a-d4e4-4fd0-aea2-8e92fe570a82.jpg", "title": "LOL妹子杯成都线下赛第二日", "info": "相信大家昨天已经跟随小编一起领略了成都赛区妹子们的电竞风采，今日是成都赛区线下赛的第二日，现场火爆程度更胜昨日，还等什么，快跟小编一起来看!" }, { "thedate": "08", "url": "http://elec.it168.com/a2015/1102/1773/000001773515.shtml", "imgurl": "http://image4.it168.com/2015/11/2/7766aaae-aa07-4777-b1ad-98bf3ea720f4.jpg", "title": "创维2016新品发布会", "info": "11月8日创维在江苏省句容市将发布2016年新品，目前没有透露新品信息，只知道多为白电产品，如冰箱、洗衣机创新性产品将和大家见面。" }, { "thedate": "10", "url": "http://mp.weixin.qq.com/s?__biz=MjM5NjU1MzM1Mw==&mid=402107017&idx=1&sn=611ad009bdfdc18a415c5cf98240bde5#rd", "imgurl": "http://image4.it168.com/2015/11/6/f5bb5743-b4c0-425d-8df4-2853b23f7121.jpg", "title": "滕飞老师告诉你怎样在“双11”买相机", "info": "相机那么多，我该怎么选？11月10日晚8点，听【相机笔记】创始人——滕飞老师告诉你，怎么才能选到自己得心应手的相机。" }, { "thedate": "11", "url": "http://live.it168.com/364.html", "imgurl": "http://image4.it168.com/2015/10/30/246e536e-a27b-49a0-b647-49111f541915.jpg", "title": "双11就要买不停 剁手党必备购物攻略", "info": "今天是喜闻乐见的11.11，我们不提对象只提荷包，大家一定把自己的荷包抽肿了吧？为节省时间小编送上购物攻略，抓紧时间买买买！" }, { "thedate": "14", "url": "http://lol.it168.com/Home/Chengdu", "imgurl": "http://image4.it168.com/2015/11/11/e8867b63-470e-49bc-aaff-8bf1e3c774e3.jpg", "title": "LOL妹子杯成都赛区8进4", "info": "即将开始的LOL妹子杯成都赛区的8进4比赛即将开始，妹子们的战争火药味也越来越浓重。到底谁才能杀入决赛？" }, { "thedate": "15", "url": "http://lol.it168.com/Home/Chengdu", "imgurl": "http://image4.it168.com/2015/11/11/c47eda51-807a-427d-8670-2d1283ad6183.jpg", "title": "LOL妹子杯成都赛区总决赛", "info": "到底谁才是电竞女王？到底谁才能走向神坛？一场软妹到女神的华丽蜕变！今日，看妹子们决战紫禁之巅！" }, { "thedate": "18", "url": "http://mp.weixin.qq.com/s?__biz=MzAxMzI4NTkyMg==&mid=400435912&idx=1&sn=a242ddd9e7e60d81714885d328525dc3#rd", "imgurl": "http://image4.it168.com/2015/11/11/ea7e0be1-552c-40db-901a-3c6810cc121a.jpg", "title": "暴风魔镜新品发布会", "info": "日前，试客收到暴风魔镜神秘邀请函，邀请函显示，暴风魔镜将于本月18日(下周三)下午，在中国电影导演中心举办一场名为“VR Here|虚拟现实引爆日”的新品发布会。" }, { "thedate": "26", "url": "http://mobile.it168.com/a2015/1102/1773/000001773521.shtml", "imgurl": "http://image4.it168.com/2015/11/2/a526ba3d-103f-4d10-9f12-42e1db7613b0.jpg", "title": "华为Mate8发布时间确定26日", "info": "华为Mate8的宣传海报主体为一个大大的数字“8”，海报下方为标示了“不仅仅是一次突破 MATE归来”，以及发布日期：2015.11.26。年的Mate系列新旗舰能否再续此前的辉煌令Mate8再发布前的数月就已成为大家关注的焦点。" }] }] }] }
+    </script>
+    <!--日历控件-->
+    <script src="WebUI/plugins/rili/rili.js"></script>
+    <script>
+        $(function () {
+            //侧导航
+            $(".sideNav li").click(function () {
+                $(this).addClass("e").siblings("li").removeClass("e");
+                var indexs = $(this).index();
+                $(".uc").eq(indexs).show().siblings(".uc").hide();
+            })
+            //我的报名处选项卡切换
+            $(".bm_swtich_all").each(function () {
+                var ths = $(this);
+                var tli = ths.find("li");
+                var tle = ths.find(".bm_swtich_line");
+                var tli_width = $(".bm_swtich li:first").width();
+                tle.width(tli_width);
+                tli.click(function () {
+                    var tw = $(this).width();
+                    tli.removeClass("e");
+                    $(this).addClass("e");
+                    tle.stop(true, true).animate({
+                        width: tw,
+                        left: $(this).position().left
+                    })
+                })
+            })
+        })
+        shink();
+        /*日历控件*/
+        function LiSelectstart(id) {
+            if (document.getElementById(id)) {
+                var sfEls = document.getElementById(id).getElementsByTagName("li");
+                for (var i = 0; i < sfEls.length; i++) {
+                    sfEls[i].onmouseover = function () {
+                        this.className = "all";
+                    }
+                    sfEls[i].onmouseout = function () {
+                        this.className = "";
+                    }
+                }
+            }
+        }
+
+</script>
+</body>
+</html>

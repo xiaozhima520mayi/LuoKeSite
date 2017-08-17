@@ -1,0 +1,22 @@
+﻿.memberList li{ padding:20px;border-bottom:#eaeaea 1px dotted; overflow:hidden;}
+.memberList li p{width:25%;}
+.memberList li p,.memberList li i,.memberList li em,.memberList li a{ float:left;overflow:hidden;}
+.memberList li a{float:right;}
+.memberList li p input{ float:left; margin-top:25px;margin-right:10px;}
+.memberList li p span{ width:60px; height:60px; border:#eee 1px solid;border-radius:4px; overflow:hidden;float:left; background-color:#eee;}
+.memberList li p b{float:left;font-weight:normal;margin-left:10px;font-size:14px;color:#515151; line-height:60px;}
+.memberList li i{width:25%;font-style:normal;line-height:60px;font-size:14px;color:#bcbcbc;}
+.memberList li em{width:35%;font-style:normal;line-height:60px;font-size:14px;color:#515151;}
+.memberList li a{width:10%;border:#eaeaea 1px solid;border-radius:3px;text-align:center;height:30px;line-height:30px;margin-top:5px;}
+.memberList li a.mail{border:none; height:40px;width:7%;}
+.memberList li a.mail i{line-height:30px; margin-top:10px; font-size:25px; width:100%;}
+.memberList li a.mail:hover i{ color:#169bd5}
+.bm_swtich_all {position:relative;border-bottom:#eee 1px solid;}
+.bm_swtich {height: 32px;text-indent:0;margin-left:10px;}
+.bm_swtich li{float: left; color: #797979;font-size: 14px;padding: 0 8px;line-height: 24px; margin-right: 8px; cursor: pointer; min-width: 54px; text-align: center;}
+.bm_swtich li.e{color: #da4f4a;}
+.bm_swtich_line{ min-width: 55px; padding: 0 8px;border-bottom: #da4f4a 4px solid; position: absolute; left: 10px;bottom: 0;}
+.controls .form-control.inset{float:left; border-radius:3px 0 0 3px;height:27px; box-shadow:#ddd 2px 2px 5px inset;}
+.yaoqing{width:86px; background-color:#66cc99; color:#fff; text-align:center; line-height:35px; height:37px; float:left; overflow:hidden;border-radius:0 3px 3px 0; font-size:14px;}
+.yaoqing:hover{ color:#fff;}
+.controls h1{ text-align:center;line-height:100px;font-size:32px; color:#d7d7d7; padding-bottom:20px;}
